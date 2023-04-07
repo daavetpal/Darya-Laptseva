@@ -7,19 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>font</title>
 </head>
 <body>
     <h1 style="font-size: 100 px; font-family: 'Amatic SC', cursive">Странные значения цветов в HTML</h1>
-    <p>Например, если задать стилевому свойству color значения "chucknorris", "CANDY", "BruceWillis", "heaven", то он.<br>
+    <div style="font-family: 'Lucida Sans', sans-serif; border: solid 6px rgb(65, 128, 65); width: 800px; margin-left: 40px; padding: 20px">Например, если атрибуту color устаревшего тега font задать значения "chucknorris", "CANDY", "BruceWillis", "heaven", то данные значения передадут цвет тексту:<br>
         <font color="#chucknorris">Чак Норрис</font><br>
         <font color="#CANDY">Леденец</font><br>
         <font color="#BruceWillis">Бедняжка Брюс</font><br>
-        Работает этого от того, как считывается HEX-код. 
+        <p><font color="#heaven">Работает этого от того, как считывается HEX-код:</font></p>
         <ul>
-            <li>Все символы, которые не являются символами шеснадцатиричной системы исчисления заменяются на нуль. Например: BruceWillis=#B00CE000000</li>
-            <li>Далее весь код дополняется нулями до числа, кратного трём. В данном случае у нас 11 символов, поэтому добавляем нуль один.</li>
-            <li>Затем делится на три части (#B00C E000 000), и отбрасываются аргументы таким образом, чтобы от каждой из трёх частей остались только два перых символа (B0 E0 00 или #B0E000). 
-                <li>Из трёх образовавшихся пар символов и cкладывается код получаемого цвета rgb(176, 224, 0);.</ul>
+            <li>Все символы, которые не являются символами шеснадцатиричной системы исчисления заменяются на нуль. Например: BruceWillis=B00CE000000</li>
+            <li>Далее весь код дополняется нулями до числа, кратного трём. В данном случае у нас 11 символов, поэтому добавляем нуль один (B00CE0000000).</li>
+            <li>Затем делится на три части (B00C E000 000), и отбрасываются аргументы таким образом, чтобы от каждой из трёх частей остались только два перых символа (B0 E0 00 или #B0E000). 
+            <li>Из трёх образовавшихся пар символов и cкладывается код получаемого цвета - rgb(176, 224, 0).</li>
+            </ul>
+            Даже если задать значение val47634fdabtr, то цвет будет #0a63ab либо rgb(10, 99, 171). Например:
+            <font color="#val47634fdabtr">непонятный текст</font>
+    </div>
 </body>
 </html>
