@@ -11,22 +11,50 @@
             padding: 0;
             box-sizing: border-box
         }
-        div{
+        div
+        {
             margin: 25px
         }
-        .first a::after
+        a
+        {
+            color: green; 
+            font-size: 30px
+        }
+        a:hover
+        {
+            color:red
+        }
+        .first > a::after
         {
             content: "|" ; 
             color: red; 
             padding: 10px; 
             font-size: 36px; 
-            font-weight: bold
+            font-weight: bolder
         }
-        a:hover{color:red}
-        a{color: green; font-size: 25px}
-        span {line-height: 20px; border-right: solid red 4px; padding: 10px}
-        .third li{display: inline-block; list-style: none; line-height: 20px; border-right: solid red 4px; padding: 10px}
-
+        .second span 
+        {
+            border-right: solid red 4px; 
+            padding: 10px
+        }
+        ul > li
+        {
+            display: inline-block; 
+            list-style: none; 
+            line-height: 20px; 
+            border-right: solid red 4px; 
+            padding: 10px
+        }
+        .third > a 
+        {
+            background: url('пал.png') right top repeat-y;
+            padding: 0 20px;
+        }
+        .fourth > a:nth-child(-n+5)
+        {
+            border-right: solid red 4px; 
+            padding: 10px
+        }
     </style>
 </head>
 <body>
@@ -44,7 +72,7 @@
         <span><a href="https://people.onliner.by/2023/04/20/ray-ban-i-kopiya">четвёртая ссылка</a></span>
         <span><a href="https://people.onliner.by/2023/04/16/sumka-za-4-tysyachi-rublej-i-zolotaya-kosuxa">пятая ссылка</a></span>
     </div>
-    <div class="third">
+    <div>
         <ul>
             <li><a href="https://people.onliner.by/2023/04/24/kazhetsya-na-minskom-more-v-eti-vyxodnye-ne-protolknutsya-posmotreli-kak-otdyxayut-gorozhane">первая ссылка</a></li>
             <li><a href="https://people.onliner.by/2023/04/24/obzor-zhenskix-sumok">вторая ссылка</a></li>
@@ -52,6 +80,20 @@
             <li><a href="https://people.onliner.by/2023/04/20/ray-ban-i-kopiya">четвёртая ссылка</a></li>
             <li><a href="https://people.onliner.by/2023/04/16/sumka-za-4-tysyachi-rublej-i-zolotaya-kosuxa">пятая ссылка</a></li>
         </ul>
+    </div>
+    <div class="third">
+        <a href="https://people.onliner.by/2023/04/24/kazhetsya-na-minskom-more-v-eti-vyxodnye-ne-protolknutsya-posmotreli-kak-otdyxayut-gorozhane">первая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/24/obzor-zhenskix-sumok">вторая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/18/pyat-luchshix-filmov-s-nikolasom-kejdzhem">третья ссылка</a>
+        <a href="https://people.onliner.by/2023/04/20/ray-ban-i-kopiya">четвёртая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/16/sumka-za-4-tysyachi-rublej-i-zolotaya-kosuxa">пятая ссылка</a>
+    </div>
+    <div class="fourth">
+        <a href="https://people.onliner.by/2023/04/24/kazhetsya-na-minskom-more-v-eti-vyxodnye-ne-protolknutsya-posmotreli-kak-otdyxayut-gorozhane">первая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/24/obzor-zhenskix-sumok">вторая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/18/pyat-luchshix-filmov-s-nikolasom-kejdzhem">третья ссылка</a>
+        <a href="https://people.onliner.by/2023/04/20/ray-ban-i-kopiya">четвёртая ссылка</a>
+        <a href="https://people.onliner.by/2023/04/16/sumka-za-4-tysyachi-rublej-i-zolotaya-kosuxa">пятая ссылка</a>
     </div>
 </body>
 </html>
