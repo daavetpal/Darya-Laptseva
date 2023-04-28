@@ -1,0 +1,41 @@
+.header
+        {
+            background-color: #313131;
+            padding-top: 10px;
+            padding-bottom: 12px;
+        }
+        .container
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1140px;
+        }
+        ul > li
+        {
+          
+            font: 14 px 'Roboto', sans-serif;
+            color: white;
+            margin-right: 30px;
+            float: left;
+            list-style: none;;
+        }
+        .container div 
+        {
+            float: right;
+        }
+        div a::before
+        {
+            content: url(phone.png);
+            padding-top: 10px;
+            padding-bottom: 11px;
+            color: white;
+            font: 14 px 'Roboto', sans-serif;
+            
+
+        }
+        .clearfix::after 
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
