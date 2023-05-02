@@ -46,7 +46,7 @@
             margin-bottom: 20px;
             border: 1px solid #E6E6E6;
         }
-        .main img
+        .main img[src^='LOGO'] 
         {
             margin-top: 12px;
             float: left;
@@ -66,6 +66,15 @@
             height: 70px;
             background-color: #FFFFFF;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        }
+        .main_items > li:nth-child(1)::before
+        {
+            content: url(kitchen-icon.png);
+            padding-left: 40px; 
+            padding-top: 23px;
+            padding-bottom: 24px;
+            padding-right: 10px;
+            list-style: none;
         }
         .clearfix::after 
         {
