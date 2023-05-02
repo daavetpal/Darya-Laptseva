@@ -2,7 +2,6 @@
         .header
         {
             width: 100%;
-            height: 36px;
             background-color: #313131;
             margin-bottom: 20px;
         }
@@ -12,31 +11,50 @@
             margin-right: auto;
             padding: 0 120px 0 140px;
         }
-        ul > li
+        .header ul
+        {
+            margin-top: 10px;
+            margin-bottom: 12px;
+            float: left;
+        }
+        .header ul > li
         {
             font: normal 14px/16px 'Roboto', sans-serif;
             color: white;
             padding-right: 30px;
-            padding-top: 10px;
-            padding-bottom: 12px;
-            float: left;
+            display: inline;
             list-style: none;
         }
-        .container div.connect
+        div.connect
         {
             float: right;
+            margin-top: 10px;
+            margin-bottom: 12px;
+
         }
-        .connect a
+        .connect a::before
         {
-            color: #FFFFFF;
+            content: url(phone.png);
+            padding-right: 10px;
+
+        } 
+         .connect a  
+        {color: #FFFFFF;
             text-decoration: none;
             font: normal 14px/16px 'Roboto', sans-serif;
+            padding-top: 10px;
+            padding-bottom: 12px;
+            padding-right: 30px;
+        }
+        .connect span::before
+        {
+            content: url(delivery-icon.png);
+            padding-right: 10px;
         }
         .connect span
         {
             color: #FFFFFF;
             font: normal 14px/16px 'Roboto', sans-serif;
-            padding: 10px 12px;
         }
         .rectangle
         {
@@ -54,27 +72,47 @@
         .icons
         {
             float: right;
-            padding-left: 37px;
+            margin-left: 37px;
+            margin-top: 19px;
         }
-        .icons img
+        .icons img:nth-child(-n+2)
         {
             padding-right: 30px;
         }
         .main_items
         {
             margin-top: 20px;
+            margin-bottom: 30px;
             height: 70px;
             background-color: #FFFFFF;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
         }
-        .main_items > li:nth-child(1)::before
-        {
+        .main_items ul > li:first-child::before
+    {
             content: url(kitchen-icon.png);
             padding-left: 40px; 
             padding-top: 23px;
             padding-bottom: 24px;
             padding-right: 10px;
             list-style: none;
+        }
+        .main_items ul > li:nth-child(n+2)::before
+        {
+            content: url(bedroom-icon.png);
+            padding-left: 40px; 
+            padding-top: 23px;
+            padding-bottom: 24px;
+            padding-right: 10px;
+            list-style: none;
+        }
+        .main_items ul > li
+        {
+            display: inline;
+        }
+        .banner
+        {
+            background: url(1785\ 1.png) no-repeat top left;
+            height: 450px;
         }
         .clearfix::after 
         {
