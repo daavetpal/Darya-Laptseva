@@ -1,4 +1,8 @@
 
+    *, *::before, *::after 
+    {
+    box-sizing: border-box;
+    }
         .header
         {
             width: 100%;
@@ -10,6 +14,7 @@
             margin-left: auto;
             margin-right: auto;
             padding: 0 120px 0 140px;
+            position: relative;
         }
         .header ul
         {
@@ -24,6 +29,7 @@
             padding-right: 30px;
             display: inline;
             list-style: none;
+            vertical-align: bottom;
         }
         div.connect
         {
@@ -56,24 +62,32 @@
             color: #FFFFFF;
             font: normal 14px/16px 'Roboto', sans-serif;
         }
-        .rectangle
+        .fast-search__input
         {
+            background-image: url(search-icon.png);
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: 15px 50%;
+            background-size: 16px 16px;
+            padding: 0px 749px 0px 49px;
             height: 50px;
-            margin-right: 150px;
-            margin-left: 151px;
             margin-bottom: 20px;
             border: 1px solid #E6E6E6;
+            font: normal 14px/16px 'Roboto', sans-serif;
+            color: #414141;
+            position: relative;
         }
         .main img[src^='LOGO'] 
         {
             margin-top: 12px;
+            margin-right: 38.04px;
             float: left;
         }
         .icons
         {
             float: right;
             margin-left: 37px;
-            margin-top: 19px;
+            margin-top: 16px;
         }
         .icons img:nth-child(-n+2)
         {
@@ -111,9 +125,18 @@
         }
         .banner
         {
-            background: url(1785\ 1.png) no-repeat top left;
-            height: 450px;
+            background: url(1785\ 1.png) no-repeat center center;
+            position: absolute;
         }
+        .banner span
+        {
+            font: normal 50x/52.65px 'Playfair Display', serif;
+            ;
+            color: #3C3C3C;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
         .clearfix::after 
         {
             content: "";
