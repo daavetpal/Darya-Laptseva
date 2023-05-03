@@ -11,8 +11,7 @@
         }
         .container
         {
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
             padding: 0 120px 0 140px;
             position: relative;
         }
@@ -126,17 +125,54 @@
         .banner
         {
             background: url(1785\ 1.png) no-repeat center center;
-            position: absolute;
+            position: relative;
         }
-        .banner span
+        .banner p:nth-child(1)
         {
-            font: normal 50x/52.65px 'Playfair Display', serif;
-            ;
+            font: normal 50px/52.65px 'Playfair Display', serif;
             color: #3C3C3C;
             letter-spacing: 0.02em;
             text-transform: uppercase;
+            padding: 100px 0 20px 120px;
         }
+        .banner p:nth-child(2)
+        {
+            font: normal 16px/22.53px 'Roboto Condensed';
+            letter-spacing: 0.02em;
+            color: #343434;
+            padding-left: 121px;
 
+        }
+        .button_catalog 
+        {
+            border: none;
+            background-color: #FFFFFF;
+            width: 163px;
+            height: 45px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-left: 121px;
+            margin-bottom: 141px;
+            font: normal 12px/16.9px 'Roboto Condensed';
+            letter-spacing: 0.04em;
+            color: #414141;
+        }
+        .button_catalog:hover
+            {box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);}
+        div.button-slider
+        {
+            width: 30px;
+            height: 30px;
+
+        }
+        .footer
+        {
+            height: 234px;
+            width: 100%;
+            margin-top: 10px;
+            background: #FFFFFF;
+            box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+        }
         .clearfix::after 
         {
             content: "";
