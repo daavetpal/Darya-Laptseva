@@ -3,6 +3,11 @@
     {
     box-sizing: border-box;
     }
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
         #header
         {
             width: 100%;
@@ -61,6 +66,20 @@
             height: 50px;
             position: relative;
         }
+        div.logo
+        {
+            float: left;
+            margin-top: 12px;
+        }
+        div.icons
+        {
+            float: right;
+            margin-top: 16px;
+        }
+        .icons img:nth-child(-n+2)
+        {
+            padding-right: 30px;
+        }
         .fast-search__input
         {
             background-image: url(search-icon.png);
@@ -71,25 +90,11 @@
             padding-left: 49px;
             padding-right: 628.4px;
             height: 50px;
-            margin-bottom: 20px;
+            margin: 0 37px 20px 38.04px;
             border: 1px solid #E6E6E6;
             font: normal 14px/16px 'Roboto', sans-serif;
             color: #414141;
             position: absolute;
-        }
-        .main_service img[src^='LOGO'] 
-        {
-            margin: 12px 38.04px 0 0;
-            float: left;
-        }
-        .icons
-        {
-            float: right;
-            margin: 16px 0 0 37px;
-        }
-        .icons img:nth-child(-n+2)
-        {
-            padding-right: 30px;
         }
         .main_block_items
         { 
@@ -161,15 +166,16 @@
             background: url(1785\ 1.png) no-repeat center center;
             position: relative;
         }
-        .banner p:nth-child(1)
+        .banner h1
         {
             font: normal 50px/52.65px 'Playfair Display', serif;
             color: #3C3C3C;
             letter-spacing: 0.02em;
             text-transform: uppercase;
             padding: 100px 0 20px 120px;
+            margin: 0;
         }
-        .banner p:nth-child(2)
+        .banner p
         {
             font: normal 16px/22.53px 'Roboto Condensed';
             letter-spacing: 0.02em;
@@ -190,13 +196,53 @@
             color: #414141;
         }
         .button_catalog:hover
-            {box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);}
+        {
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        }
+        .main_block h6
+        {
+            margin: 0;
+            padding-top: 30px;
 
+        }
+        div.items_cards
+        {
+            margin-top: 35px;
+            margin-right: 30px;
+            height: 361px;
+            width: 263px;
+            float: left;
+        }
+        div.items_cards:nth-of-type(n+4)
+        {
+            margin-right: 0;
+        }
+        .items_cards img[src^="wishlist"]
+        {
+            margin: 21px 15.5px 0 0;
+            float: right;
+        }
+        .items_cards img[src$=".jpg"]
+        {
+            padding: 38px 31px 54px 32px;
+        }
+       
+        p.name
+        {
+            padding-left: 20px;
+            padding-bottom: 9px;
+            font: normal 500px 14px/18.75px 'Roboto', sans-serif;
+        }
+        p.type
+        {
+            padding-left: 20px;
+            padding-bottom: 6px;
+            font: normal 400px 11px/13px 'Roboto', sans-serif;
+        }
         #footer
         {
             height: 234px;
             width: 100%;
-            margin-top: 10px;
             background: #FFFFFF;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
         }
@@ -205,7 +251,7 @@
             float: left;
             margin: 54px 0 32px 0;
         }
-        .nav_bottom p
+        .nav_bottom h4
         {
             text-transform: uppercase;
             font: normal 500px 14px/17.74px 'Roboto', sans-serif;
