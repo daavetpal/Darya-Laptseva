@@ -94,7 +94,7 @@
         {
             padding-right: 30px;
         }
-        .main_block
+        .main_block_items
         { 
             margin-top: 20px;
             margin-bottom: 30px;
@@ -102,7 +102,64 @@
             background-color: #FFFFFF;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
         }
-
+        .main_block_items ul
+        {
+            padding-left: 40px;
+            padding-top: 25px;
+        }
+        .main_block_items ul > li
+        {
+            display: inline;
+            font: normal 16px/19px 'Roboto', sans-serif;
+            color: #414141;
+            padding-right: 50px;
+        
+        }
+        .main_block_items ul > li:nth-child(1)::before
+        {
+            content: url(kitchen-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(2)::before
+        {
+            content: url(bedroom-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(3)::before
+        {
+            content: url(livingroom-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(4)::before
+        {
+            content: url(closet-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(5)::before
+        {
+            content: url(office-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(6)::before
+        {
+            content: url(childrensroom-icon.png);
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+        .main_block_items ul > li:nth-child(7)
+        {
+            padding-right: 47px;
+            color: #D74444;
+        }
+        .main_block_items ul img
+        {
+            vertical-align: middle;
+        }
         .banner
         {
             background: url(1785\ 1.png) no-repeat center center;
@@ -148,6 +205,17 @@
             margin-top: 10px;
             background: #FFFFFF;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
+        }
+        .nav_bottom p
+        {
+            text-transform: uppercase;
+            font: normal 14px/17.74px 500px 'Roboto', sans-serif;
+            color: #000000;
+            padding: 54px 0 162px 130px;
+        }
+        .nav_bottom ul
+        {
+            padding-left: 130px;
         }
         .clearfix::after 
         {
