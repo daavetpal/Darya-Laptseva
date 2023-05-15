@@ -1,0 +1,15 @@
+@media print 
+{
+    html, body{
+		height: 297mm;
+		width: 210mm;
+	}
+    .birth, .years, .inf
+    {
+        margin: 0;
+    }
+    a[href^="https"]::after{content: " на " attr(href) ""};
+	}
+    a[href^="#"]::before{content: " ссылка " };
+
+
