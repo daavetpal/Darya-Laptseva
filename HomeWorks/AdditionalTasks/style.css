@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    background-color: brown;
+}
+.header{
+    height: 50px;
+    background-color: aqua;
+}
+.footer{
+    height: 50px;
+    background-color: blueviolet;
+}
+.menu{
+    width: 200px;
+    height: 300px;
+    background-color: chartreuse;
+    float: left;
+}
+
+.content{
+    background-color: chocolate;
+}
