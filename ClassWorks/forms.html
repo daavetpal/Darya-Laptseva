@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="http://fe.it-academy.by/TestForm.php">
+        Введите Destination:<br>
+    <input type="text" name="city"><br>
+    <hr>
+    Выберите аэропорт вылета: <br>
+    <select name="airport">
+        <option value="1">Warsaw Modlin</option>
+        <option value="2">Warsaw Chopin</option>
+        <option value="3">Wroclaw</option>
+        <option value="4">Gdansk</option>
+    </select>
+    <hr>
+    Нужен регистрируемый багаж? <br>
+    <input type="radio" name="answer" value="1">да<br>
+    <input type="radio" name="answer" value="2">нет<br>
+    <input type="radio" name="answer" value="3">ручная кладь<br>
+    <hr>
+    Хотите оформить подписку на наши обновления:
+    <input type="checkbox" name="updates"><br>
+    <input type="submit" value="send"><br>
+    <hr>
+    Оставьте дополнительный комментарий по поездке: <br>
+    <textarea name="comment">Комментарий</textarea>
+    <input type="submit" value="send">
+</form>
+</body>
+</html>
