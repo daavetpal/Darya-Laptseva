@@ -8,18 +8,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">header</div>
-    <div class="container clearfix">
-        <div class="menu">menu</div>
-        <div class="content">content</div>
+    
+    <div class="header">
+        <h2>Элемент picture &mdash; адаптирует картинки под разные устройства и поддерживаемые форматы</h2>
     </div>
-<div class="footer">footer</div>
-
-    <picture>
-        <source media="(min-width: 1000px)" srcset="img add/eifel.jpg">
-        <source media="(min-width: 650px)" srcset="img add/paris.webp">
-        <img src="img add/best-time-to-visit-paris-820x547.jpg" alt="paris">
-      </picture>
-      
+    <div class="container clearfix">
+        <div class="menu">
+            <p>Измените размер браузера, чтобы увидеть разные версии загрузки изображений с разными разрешениями. Сначала браузер ищет первый элемент
+                тега source, где медиа-запрос соответствует ширине текущего окна просмотра браузера, и извлекает изображение, указанное в атрибуте srcset.
+            </p>
+            <p>Элемент img нужен в качестве последнего тега блока. Используется для обеспечения обратной совместимости для браузеров, которые не поддерживают
+                или если ни один элемент из тегов source не подходит под условия.
+            </p>
+        </div>
+        <div class="content">
+            <picture>
+             <source srcset="img add/paris 3.webp" media="(max-width: 650px)">
+             <source srcset="img add/eifel.jpg" media="(max-width: 1000px)">
+             <img src="img add/paris 2.jpg" alt="paris">
+          </picture>
+        </div>
+    </div>
+    
 </body>
 </html>
