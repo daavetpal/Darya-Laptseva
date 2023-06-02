@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <div class="header">
+    <!--<div class="header">
         <h2>Элемент picture &mdash; адаптирует картинки под разные устройства и поддерживаемые форматы</h2>
     </div>
     <div class="container clearfix">
@@ -20,12 +20,12 @@
             <p>Элемент img нужен в качестве последнего тега блока. Используется для обеспечения обратной совместимости для браузеров, которые не поддерживают
                 или если ни один элемент из тегов source не подходит под условия.
             </p>
-        </div>
+        </div>-->
         <div class="content">
             <picture>
-             <source srcset="img add/paris 3.webp" media="(max-width: 650px)">
-             <source srcset="img add/eifel.jpg" media="(max-width: 1000px)">
-             <img src="img add/paris 2.jpg" alt="paris">
+            <source srcset="img add/paris1.jpg" media="(min-width: 600px)" />
+            <source srcset="img add/paris2.jpg" media="(min-width: 1200px)" />
+            <img src="img add/paris_main.jpg" alt="paris" />
           </picture>
         </div>
     </div>

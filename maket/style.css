@@ -212,6 +212,7 @@
             height: 361px;
             width: 263px;
             float: left;
+            position: relative;
         }
         div.items_cards:nth-of-type(4n+4)
         {
@@ -251,6 +252,73 @@
             font: normal 500 16px/19px 'Roboto', sans-serif;
             color: #414141;
         }
+        .items_expansion
+        {
+            padding-top: 15px;
+            opacity: 0;
+        }
+        .items_cards:hover 
+        {
+            box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+        }
+        .items_cards:hover .items_expansion 
+        {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+                        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            opacity: 1;
+        }
+        .items_expansion > p:first-child 
+        {
+            margin-bottom: 8px;
+            font: normal 400 12px/14px 'Roboto', sans-serif; 
+        }     
+        .items_expansion 
+        {
+            width: 263px;
+            padding-left: 20px;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+        }
+        .items_expansion .height 
+        {
+            display: inline-block;
+        }
+        .items_expansion .width,
+        .items_expansion .depth 
+        {
+            display: inline-block;
+            margin-right: 35px;
+        }
+        .items_expansion div p
+        {
+            font: normal 400 9px/11px 'Roboto', sans-serif;
+            color: rgba(118, 119, 119, 0.5);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        .items_expansion span 
+        {
+            font: normal 400 9px/11px 'Roboto', sans-serif;
+        } 
+        .items_cards .items_expansion > div
+        {
+            margin-bottom: 17px;
+        }
+        .items_expansion button 
+        {
+            width: 223px;
+            height: 40px;
+            padding: 0;
+            margin-bottom: 20px;
+            color: white;
+            border: none;
+            background: #245462;
+        }
+        .items_expansion button:hover 
+        {
+            background: #214955;
+        }
         #footer
         {
             height: 234px;
@@ -258,46 +326,98 @@
             background: #FFFFFF;
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
         }
-        .nav_bottom h4
+        .footer_left
+        {
+            float: left;
+            margin-top: 54px;
+            font: normal 14px/17.74px 'Roboto', sans-serif;
+            color: #414141;
+        }
+        .footer_left .nav_left
+        {
+            float: left;
+            margin-bottom: 34px;
+            margin-right: 50px;
+        }
+        .footer_left .nav_left > li
+        {
+            margin-bottom: 7px;
+        }
+        .footer_left p
         {
             text-transform: uppercase;
-            font: normal 14px/17.74px 'Roboto', sans-serif;
+            font: bold 14px/17.74px 'Roboto', sans-serif;
             color: #000000;
             padding-bottom: 10px;
         }
-        .nav_bottom ul
+        .footer_left .nav_left2 li
         {
             float: left;
-            margin: 54px 0 32px 0;
+            margin-right: 30px;
         }
-        ul.column1
+        .footer_left .nav_left2 li:first-child
         {
-            margin-right: 50px;
+            color: red;
         }
-        ul.column2
-        {
-            margin-right: 50px;
-        }
-        .nav_bottom ul > li
-        {
-            padding-bottom: 7px;
-            font: normal 14px/17.74px 'Roboto', sans-serif;
-        }
-        ul.column4
-        {
-            margin-top: 34px;
-            display: inline;
-        }
-        .nav_bottom img
+        .footer_right
         {
             float: right;
+        }
+        .footer_right .foot_logo
+        {
+            float: right;
+            width: 60px;
+            height: 49px;
             margin-top: 49px;
+            margin-bottom: 20px;
+            background: url(logo2.png) no-repeat;
         }
-        .nav_bottom p
+        .footer_right p
         {
             float: right;
             font: normal 14px/17.74px 'Roboto', sans-serif;
-            margin-top: 118px;
+            color: #414141;
+            clear: both;
+            height: 54px;
+            margin-bottom: 10px;
+        }
+        .footer_right .nav_right
+        {
+            clear: both;
+            float: right;
+        }
+        .footer_right .nav_right li
+        {
+            float: right;
+            margin-right: 30px;
+            font: normal 14px/17.74px 'Roboto', sans-serif;
+            color: #414141;
+        }
+        .nav_right li:first-child
+        {
+            margin-right: 0;
+        }
+        .nav_right a
+        {
+            color:  #414141;
+        }
+        .nav_right li:nth-child(1)::before
+        {
+            content: url(phone1.png);
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .nav_right li:nth-child(2)::before
+        {
+            content: url(inst.png);
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .nav_right li:nth-child(3)::before
+        {
+            content: url(mail.png);
+            margin-right: 10px;
+            vertical-align: middle;
         }
         .clearfix::after 
         {

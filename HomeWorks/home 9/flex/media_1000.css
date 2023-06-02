@@ -1,0 +1,16 @@
+@media all and (max-width: 1000px)
+{
+    header, footer
+    {
+       font-size: 20px;
+       padding: 10px;
+    }
+    .content img
+    {
+        width: 200px;
+    }
+    h1
+    {
+        font-size: x-large;    
+    }
+}

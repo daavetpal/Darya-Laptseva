@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    label {
+        user-select: none;
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        transition: 0.5s;
+    }
+    input {
+        display: none;
+    }
+
+    input:checked+label {
+        background-image: url(content_redcheck.jpeg);
+        background-size: 100px 100px;
+        background-repeat: no-repeat;
+        
+    }
+    input+label {
+        background-color: rgb(118, 63, 63);
+    }
+</style>
+</head>
+
+<body>
+
+<span>Вы готовы проголосовать?</span>
+<input type="checkbox" id="voice">
+<label for="voice"></label>
+
+</body>
+</html>

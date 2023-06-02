@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>MAKET_FORM</title>
+</head>
+<body>
+    <form method="post" action="http://fe.it-academy.by/TestForm.php">
+     <fieldset>
+         <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+         <div class="section">
+             <label>
+                 <span>Название статьи:</span>
+                 <input type="text" name="articlename" id="articlename">
+             </label>
+         </div>
+         <div class="section">
+             <label>
+                 <span>Рубрика:</span>
+                 <select name="sectionname">
+                     <option value="1">компьютерная техника </option>
+                     <option value="2">графика и дизайн</option>
+                     <option value="3">программирование</option>
+                 </select>
+             </label>
+         </div>
+        <div class="section">
+             <span>Публикация:</span>
+             <label class="publication">
+                 <span><input type="radio" name="placepublication" value="1">на сайте</span>
+                 <span><input type="radio" name="placepublication" value="2">в журнале</span>
+                 <span><input type="radio" name="placepublication" value="3">на сайте и в журнале</span>
+             </label>
+        </div>
+        <div class="section">
+             <label>
+                 <span>Разрешить комментарии:</span>
+                 <input type="checkbox" name="comment" checked>
+             </label>
+         </div>
+         <div class="section">
+             <label>
+                 <span>Текст статьи:</span><br>
+                 <textarea name="comment"></textarea>
+             </label><br>
+             <input type="submit" value="Опубликовать"><br>
+         </div>
+     </fieldset>
+</form>
+</body>
+</html>

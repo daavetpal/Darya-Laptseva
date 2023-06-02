@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+fieldset
+{
+    border: dotted red 3px;
+}
+.section
+{
+    margin: 15px 0 0 15px;
+}
+#articlename
+{
+    width: 80%;
+}
+select
+{
+    margin-left: 6.5%;
+}
+.publication
+{
+    margin-left: 3.5%;
+}
+p 
+{
+    margin: 15px;
+}
+textarea
+{
+    width: 500px;
+    height: 100px;
+}
+input[type="submit"]
+{
+    margin: 15px;
+    width: 100px;
+}

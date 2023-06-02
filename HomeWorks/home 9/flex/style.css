@@ -1,0 +1,52 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        div
+        {
+            background-color: transparent;
+        }
+        .main 
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .menu
+        {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .content
+        {
+            background: url('..//home 5/football.png') repeat-y bottom right; 
+            padding: 10px 20px 20px 20px;
+        }
+        .content img
+        {
+            width: 300px;
+            padding: 10px; 
+            float: left;
+        }
+        header, footer
+        {
+            background-color:  rgb(113, 191, 227);
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+            padding: 20px;
+            color:blue;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        p.caption
+        {
+        font-weight: bold;
+        padding-left: 20px;
+        }

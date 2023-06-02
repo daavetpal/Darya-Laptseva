@@ -1,0 +1,20 @@
+@media all and (max-width: 800px)
+{
+    #articlename
+{
+    display: block;
+}
+select
+{
+    margin: 0;
+    display: block;
+}
+.publication > span
+{
+    display: block;
+}
+textarea
+{
+    width: 60%;
+}
+}

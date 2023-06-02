@@ -1,0 +1,37 @@
+@media all and (max-width: 600px)
+{
+    ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+    }
+    ul li
+    {
+        padding: 0 5px;
+    }
+    header, footer
+    {
+       display: none;
+    }
+    .main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .menu, .content
+    {
+        background: none;
+    }
+    .content img 
+    {
+        float: left;
+        width: auto;
+    }
+    h1
+    {
+        font-size: medium;
+        text-align: center;
+    }
+}

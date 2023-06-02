@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+.wrap > img
+{
+    position: absolute;
+
+}
+.wrap > img:nth-child(1)
+{
+    top: 0;
+    left: 0;
+}
+.wrap > img:nth-child(2)
+{
+    top: 0;
+    left: 200px;
+}
+.wrap > img:nth-child(3)
+{
+    top: 70px;
+    left: 70px;
+    z-index: 1;
+}
+.wrap > img:nth-child(4)
+{
+    top: 200px;
+    left: 100px;
+}
+.wrap > img:hover
+{
+    z-index: 2;
+}
