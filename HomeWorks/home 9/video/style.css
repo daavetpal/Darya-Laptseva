@@ -1,0 +1,11 @@
+.wrap
+{
+    overflow: auto;
+    height: 300px;
+    width: fit-content;
+}
+a
+{
+    margin-bottom: 15px;
+    display: block;
+}
