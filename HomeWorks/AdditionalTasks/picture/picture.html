@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Элемент <code>picture</code> &mdash; адаптирует картинки под разные устройства и поддерживаемые форматы</h2>
+    <ul>
+        <li>HTML элемент <code>picture</code> позволяет отображать разные изображения для разных устройств или размеров экрана.</li>
+        <li>Используя элемент <code>picture</code> вы можете добавлять изображения всех форматов, и браузер будет использовать первый распознанный формат, а также игнорировать любой из следующих элементов.</li>
+    </ul>
+    <p>Измените размер браузера, чтобы увидеть разные версии загрузки изображений с разными разрешениями. Сначала браузер ищет первый элемент
+    тега source, где медиа-запрос соответствует ширине текущего окна просмотра браузера, и извлекает изображение, указанное в атрибуте srcset.</p>
+    <p>Элемент img нужен в качестве последнего тега блока. Используется для обеспечения обратной совместимости для браузеров, которые не поддерживают или если ни один элемент из тегов source не подходит под условия.</p>
+    <p>Пример написания кода.<br>
+        <code>&lsaquo;picture&rsaquo;<br>
+            &lsaquo;source media="(min-width: 1200px)" srcset="paris-png-free-download.png"&rsaquo;<br>
+            &lsaquo;source  media="(max-width: 600px)" srcset="paris1.jpg"&rsaquo;<br>
+            &lsaquo;img src="paris_main.jpg" alt="paris" style="width: 100%"&rsaquo;<br>
+            &lsaquo;/picture&rsaquo;
+        </code></p>
+    <div class="content">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="paris-png-free-download.png">
+          <source  media="(max-width: 600px)" srcset="paris1.jpg">
+          <img src="paris_main.jpg" alt="paris" style="width: 100%">
+        </picture>
+    </div> 
+</body>
+</html>
