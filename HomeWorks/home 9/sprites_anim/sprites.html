@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprites_anim</title>
+    <style>
+
+        @keyframes sprites
+        {
+            from {background: url(cats.png) 0 0;}
+            to {background: url(cats.png) -576px 0;}
+        }
+        #cat
+        {
+            width: 64px;
+            height: 64px;
+            animation: sprites 1s steps(9) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div id="cat"></div>
+</body>
+</html>

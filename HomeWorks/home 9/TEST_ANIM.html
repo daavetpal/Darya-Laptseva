@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anim</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        @keyframes backgr
+        {
+        from{
+            background-color: blueviolet
+            }
+        50% {
+            background-color: aquamarine;
+            }
+        to {
+            background-color: greenyellow;
+           }
+        }
+        @keyframes border
+        {
+            from{
+                border-radius: 0;
+                box-shadow: 0 0 20px red inset'
+            }
+            to{
+                border-radius: 20px;
+                box-shadow: 0 0 20px white;
+            }
+        }
+        .backgr
+        {
+            width: 500px;
+            height: 500px;
+            background-color: blueviolet;
+            animation: backgr 6s infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.backgr:hover div.text{
+            background-color: yellow;
+            border-radius: 0;
+            box-shadow: 0 0 20px red inset;
+            transform: rotate(360deg);
+            transform-origin: 50% 50%;
+            transition: 4s;
+            font-size: 25px;
+            color: blue;
+            animation: border 4s infinite;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="backgr">
+        <div class="text">6:00 — Эх, надо вставать…<br>
+            6:15 — Ну все, встаю на счёт три!!! Раз… Два……..<br>
+            9:50 — ТВОЮ МАТЬ!!!!…..
+        </div>
+    </div>
+</body>
+</html>
