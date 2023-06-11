@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKETA</title>
+</head>
+<body>
+    <script>
+        var lastname=prompt('Введите ваше фамилию');
+        var firstname=prompt('Введите ваше имя');
+        var givenname=prompt('Введите ваше отчество');
+        var age=prompt('Введите ваш возраст');
+        var sex=confirm('Ваш пол - мужской?');
+        var pension='нет'
+        if (sex===false&&age>=58)
+           {sex='женский';
+            pension='да'};
+        if (sex===true&&age>=60)
+           {pension='да'};
+        alert ('ваше ФИО: '+lastname+' '+firstname+' '+givenname+'\n'+
+        'ваш возраст в годах: '+age+'\n'+
+        'ваш возраст в днях: '+(parseInt(age)*365)+'\n'+
+        'через 5 лет вам будет: '+(parseInt(age)+5)+'\n'+
+        'ваш пол: '+sex+'\n'+'вы на пенсии: '+pension)
+    </script>
+</body>
+</html>
