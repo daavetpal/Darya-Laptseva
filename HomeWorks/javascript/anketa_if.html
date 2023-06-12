@@ -13,10 +13,10 @@
         var age=prompt('Введите ваш возраст');
         var sex=confirm('Ваш пол - мужской?');
         var pension='нет'
-        if (sex===false&&age>=58)
+        if ((sex===false)&&(age>=58))
            {sex='женский';
             pension='да'};
-        if (sex===true&&age>=60)
+        if ((sex===true)&&(age>=60))
            {pension='да'};
         alert ('ваше ФИО: '+lastname+' '+firstname+' '+givenname+'\n'+
         'ваш возраст в годах: '+age+'\n'+
