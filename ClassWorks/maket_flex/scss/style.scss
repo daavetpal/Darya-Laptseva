@@ -1,0 +1,46 @@
+@import "blocks/header.scss";
+@import "blocks/content.scss";
+@import "mixins.scss";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_menu:first-child
+{
+    margin-right: 195px;;
+}
+
+.logo p:first-child
+{
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 37.0312px;
+}
+.logo p:last-child
+{
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+ul
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 58px;
+}
+ul li
+{
+    display: inline;
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}

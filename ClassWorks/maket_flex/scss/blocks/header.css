@@ -1,0 +1,33 @@
+header {
+  height: 100vh;
+  background-image: url(..//..//images/main_image.png); }
+
+.container {
+  width: 1620px;
+  padding: 0 100px 0 200px;
+  height: 100vh;
+  margin: 0 auto; }
+  .container .main_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 33px; }
+    .container .main_menu .logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+.leftcolumn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+  height: 100vh;
+  border-right: 1px solid #FFFFFF;
+  z-index: 1; }
+
+/*# sourceMappingURL=header.css.map */
