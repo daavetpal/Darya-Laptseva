@@ -1,8 +1,19 @@
-@mixin btn($w: 294px, $h: 59px)
+@import "fonts/Evolventa/style.css";
+@mixin btn ($w: 294px, $h: 59px)
 {
     width: $w;
     height: $h;
     background: #FFFFFF;
     border-radius: 10px;
     font-size: 16px;
+    border: none;
+    position: relative;
+}
+
+@mixin font ($wght: 400)
+{
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: $wght;
+    color: #000;
 }

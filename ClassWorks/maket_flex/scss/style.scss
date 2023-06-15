@@ -6,41 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main_menu:first-child
+
+ol, ul
 {
-    margin-right: 195px;;
+    list-style: none;
 }
 
-.logo p:first-child
+footer,header,nav,section,main 
 {
-    font-family: 'Evolventa';
-    font-style: normal;
-    font-weight: 700;
-    color: #FFFFFF;
-    font-size: 37.0312px;
+    display: block;
 }
-.logo p:last-child
-{
-    font-family: 'Evolventa';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-ul
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 58px;
-}
-ul li
-{
-    display: inline;
-    font-family: 'Evolventa';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFFFFF;
+
+@import "mixins.scss";
+body {
+    @include font;
 }

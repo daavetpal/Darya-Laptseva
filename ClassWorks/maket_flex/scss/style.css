@@ -1,23 +1,66 @@
+@import url(fonts/Evolventa/style.css);
+@import url(fonts/Evolventa/style.css);
+@import url(fonts/Evolventa/style.css);
+.btn {
+  width: 294px;
+  height: 59px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  position: relative; }
+
 header {
   height: 100vh;
-  background-image: url(..//..//images/main_image.png); }
+  background: url(..//..//images/main_image.png) no-repeat;
+  background-size: cover;
+  position: relative; }
 
 .container {
   width: 1620px;
   padding: 0 100px 0 200px;
-  height: 100vh;
-  margin: 0 auto; }
-  .container .main_menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 33px; }
-    .container .main_menu .logo {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+  margin: 0 auto;
+  height: 100vh; }
 
-.leftcolumn {
+.header_menu {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  padding-top: 33px; }
+  .header_menu .header_logo {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    margin-right: 179px; }
+    .header_menu .header_logo p:first-child {
+      font-family: 'Evolventa';
+      font-style: normal;
+      font-weight: 700;
+      color: #000;
+      color: #FFFFFF;
+      font-size: 37px;
+      line-height: 170%;
+      margin-right: 12px; }
+      .header_menu .header_logo p:first-child p:last-child {
+        font-family: 'Evolventa';
+        font-style: normal;
+        font-weight: 400;
+        color: #000;
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 115%;
+        letter-spacing: 0.06em; }
+
+menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,42 +72,76 @@ header {
   height: 100vh;
   border-right: 1px solid #FFFFFF;
   z-index: 1; }
+  menu img {
+    position: absolute;
+    top: 37px;
+    left: 36px; }
+
+.header_title {
+  margin: 295px 0 56px 0;
+  font-family: 'Evolventa';
+  font-style: normal;
+  font-weight: 700;
+  color: #000;
+  font-size: 64px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF; }
+
+.header_languages {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  margin-right: 80px; }
+  .header_languages li {
+    display: inline;
+    margin-left: 16px;
+    color: #FFFFFF;
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em; }
+
+.header_tel h6 {
+  font-size: 16px;
+  line-height: 155%;
+  letter-spacing: .02em;
+  color: #fff; }
+
+.header_text {
+  margin-top: 189px;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF; }
+
+button svg {
+  position: absolute;
+  right: 25px;
+  top: 23px; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-.main_menu:first-child {
-  margin-right: 195px; }
+ol, ul {
+  list-style: none; }
 
-.logo p:first-child {
-  font-family: 'Evolventa';
-  font-style: normal;
-  font-weight: 700;
-  color: #FFFFFF;
-  font-size: 37.0312px; }
+footer, header, nav, section, main {
+  display: block; }
 
-.logo p:last-child {
+body {
   font-family: 'Evolventa';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  color: #FFFFFF; }
-
-ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  width: 58px; }
-
-ul li {
-  display: inline;
-  font-family: 'Evolventa';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF; }
+  color: #000; }
 
 /*# sourceMappingURL=style.css.map */
