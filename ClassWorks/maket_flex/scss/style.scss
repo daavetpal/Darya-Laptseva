@@ -1,6 +1,10 @@
 @import "blocks/header.scss";
 @import "blocks/content.scss";
 @import "mixins.scss";
+body {
+    @include font;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +21,3 @@ footer,header,nav,section,main
     display: block;
 }
 
-@import "mixins.scss";
-body {
-    @include font;
-}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+</head>
+<body>
+    <input type="button" value="ввод информации о стране" onclick="addCountry (1)">
+    <input type="button" value="получение информации о стране" onclick="getCountry (1)">
+    <input type="button" value="перечень всех стран" onclick="getList (1)">
+    <input type="button" value="удаление информации о стране" onclick="deleteCountry (1)">
+    <script>
+        var country=prompt('введите название страны');
+        var capital=prompt('введите название столицы страны');
+        function addCountry(countryName, capitalName)
+        {country.countryName=capitalName};
+        function getCountry(countryName) {
+        if ( countryName in country )
+            return 'страна: ' + countryName + ' столица: ' + countrys[countryName] ;
+        else
+            return 'нет информации о стране ' + countryName + '!' ;
+    }
+    function listCountrys() {
+        var res="";
+        for ( var CN in countrysH )
+            res+='\n'+getCountryInfo(CN);
+        return res;
+    }
+    function deleteCountry(countryName) {
+        delete countrysH[countryName];
+    }
+    </script>
+
+</body>
+</html>
