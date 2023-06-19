@@ -4,11 +4,11 @@ Error: File to import not found or unreadable: mixins.scss.
         on line 1 of C:\Users\ДАША\Darya-Laptseva\ClassWorks\maket_flex\scss\blocks\header.scss
 
 1: @import "mixins.scss";
-2: .btn {
-3:     @include btn;
-4: }
-5: 
-6: header
+2: 
+3: .btn {
+4:     @include btn;
+5: }
+6: 
 
 Backtrace:
 C:\Users\ДАША\Darya-Laptseva\ClassWorks\maket_flex\scss\blocks\header.scss:1
@@ -49,4 +49,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: mixins.scss.\A        Load path: C:/Users/ДАША/Darya-Laptseva/ClassWorks/maket_flex/scss/blocks\A         on line 1 of C:\Users\ДАША\Darya-Laptseva\ClassWorks\maket_flex\scss\blocks\header.scss\A \A 1: @import \"mixins.scss\";\A 2: .btn {\A 3:     @include btn;\A 4: }\A 5: \A 6: header"; }
+  content: "Error: File to import not found or unreadable: mixins.scss.\A        Load path: C:/Users/ДАША/Darya-Laptseva/ClassWorks/maket_flex/scss/blocks\A         on line 1 of C:\Users\ДАША\Darya-Laptseva\ClassWorks\maket_flex\scss\blocks\header.scss\A \A 1: @import \"mixins.scss\";\A 2: \A 3: .btn {\A 4:     @include btn;\A 5: }\A 6: "; }

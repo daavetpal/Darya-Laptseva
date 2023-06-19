@@ -1,4 +1,5 @@
 @import "mixins.scss";
+
 .btn {
     @include btn;
 }
@@ -49,10 +50,9 @@ header
                 font-size: 37px;
                 line-height: 170%;
                 margin-right: 12px;
-            
+                
             & p:last-child
             {
-                @include font;
                 font-size: 14px;
                 color: #FFFFFF;
                 line-height: 115%;
@@ -119,6 +119,12 @@ $wght: 700;
     }
 }
 
+.header_tel a
+{
+    color: #fff;
+    font-size: 28px;
+    line-height: 150%;
+}
 .header_tel h6
 {
     font-size: 16px;
