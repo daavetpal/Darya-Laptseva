@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .section_title {
   font-weight: 700;
   font-size: 56px;
@@ -71,6 +72,7 @@
 
 .column1_paragraph {
   max-width: 820px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 175%;
   letter-spacing: .03em;
@@ -89,7 +91,8 @@
     padding-left: 32px;
     width: 409px;
     height: 36px;
-    font-size: 28px; }
+    font-size: 28px;
+    font-weight: 700; }
 
 .column_item:last-child {
   padding-bottom: 0; }
@@ -110,7 +113,8 @@
 .logistics {
   position: relative;
   background-color: #FFF;
-  z-index: 2; }
+  z-index: 2;
+  margin-left: -100px; }
   .logistics .section_title {
     padding: 100px 0 0 100px; }
 
@@ -123,7 +127,8 @@
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 100px; }
   .wrap_logistics_information .logistics_column {
     max-width: 760px;
     flex: 1 1 auto; }
@@ -190,6 +195,9 @@
 
 .services_card {
   display: flex; }
+  .services_card .card {
+    padding: 32px 48px 48px 48px;
+    color: #000; }
 
 .services_card:nth-of-type(1) .card:nth-child(1) {
   -webkit-box-flex: 0;
@@ -316,11 +324,64 @@
   z-index: 1;
   display: inline-block;
   margin-left: 100px;
-  margin-bottom: -300px;
-  background: url(..//..//images/main2.jpg) no-repeat; }
+  margin-bottom: -300px; }
 
-.form {
-  width: 720px; }
+.wrap_cost_internal {
+  margin-left: -100px;
+  padding: 100px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff; }
+
+.wrap_cost_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .wrap_cost_form .form {
+    width: 720px; }
+    .wrap_cost_form .form .form_title {
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: .02em;
+      color: #000; }
+    .wrap_cost_form .form .contacts {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 32px; }
+
+.inp_contacts {
+  padding: 12px 16px 14px 16px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: .03em;
+  color: #888; }
+
+lable.name_contacts::after {
+  content: "Контактное лицо*"; }
+
+lable.name_contacts1::after {
+  content: "Телефон*"; }
+
+lable.name_contacts2::after {
+  content: "Телефон*"; }
+
+lable.name_contacts3::after {
+  content: "E-mail*"; }
 
 .contacts_img {
   margin-left: 100px;
