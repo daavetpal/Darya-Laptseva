@@ -345,10 +345,12 @@ div.container.cost_container {
   padding-right: 100px; }
 
 .wrap_cost_internal {
-  padding-left: 200px;
+  padding-left: 100px;
   position: relative;
   z-index: 2;
   background-color: #fff; }
+  .wrap_cost_internal .section_title {
+    padding: 100px 0 0 100px; }
 
 .wrap_cost_form {
   display: -webkit-box;
@@ -359,7 +361,8 @@ div.container.cost_container {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-left: 100px; }
   .wrap_cost_form .form {
     width: 720px; }
     .wrap_cost_form .form .form_title {

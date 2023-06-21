@@ -425,10 +425,13 @@ div.container.cost_container
 
 .wrap_cost_internal {
 
-    padding-left: 200px;
+    padding-left: 100px;
     position: relative;
     z-index: 2;
     background-color: #fff;
+    .section_title {
+        padding: 100px 0 0 100px;
+    }
 }
 
 .wrap_cost_form {
@@ -441,6 +444,7 @@ div.container.cost_container
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-left: 100px;
 
     .form {
         width: 720px;
