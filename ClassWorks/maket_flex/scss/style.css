@@ -256,11 +256,15 @@ button svg {
   background-size: contain;
   margin-bottom: -300px; }
 
+div.container.logistics_container {
+  padding-left: 0px;
+  padding-right: 100px; }
+
 .logistics {
   position: relative;
   background-color: #FFF;
   z-index: 2;
-  margin-left: -100px; }
+  padding-left: 100px; }
   .logistics .section_title {
     padding: 100px 0 0 100px; }
 
@@ -482,8 +486,11 @@ section.wrap_manager .container {
   background: url(..//..//images/main4.jpg) no-repeat;
   background-size: contain; }
 
+div.container.cost_container {
+  padding-left: 0px;
+  padding-right: 100px; }
+
 .wrap_cost_internal {
-  margin-left: -100px;
   padding: 100px;
   position: relative;
   z-index: 2;
