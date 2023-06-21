@@ -329,6 +329,9 @@ section.wrap_manager .container {
   line-height: 90%;
   color: #feca57; }
 
+section.wrap_cost {
+  margin-bottom: 100px; }
+
 .cost_image {
   position: relative;
   z-index: 1;
