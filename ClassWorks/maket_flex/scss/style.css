@@ -258,7 +258,9 @@ button svg {
 
 div.container.logistics_container {
   padding-left: 0px;
-  padding-right: 100px; }
+  padding-right: 100px;
+  width: 1620px;
+  margin: 0 auto; }
 
 .logistics {
   position: relative;
