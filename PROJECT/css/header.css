@@ -1,0 +1,75 @@
+@charset "UTF-8";
+header {
+  height: 204px; }
+
+.header_inner {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; }
+  .header_inner .header_logo {
+    margin-left: 162px;
+    margin-right: 150px; }
+
+.header_menu {
+  margin-right: 130px; }
+
+.header_menu_list {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center; }
+
+.header_menu_item {
+  display: inline;
+  text-decoration: none;
+  color: #274C5B;
+  font-size: 20px;
+  margin-left: 18px; }
+
+/* необходим для размещения выпадающего содержимого */
+.header_menu_item.drop {
+  position: relative;
+  display: inline-block; }
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.drop_add {
+  display: none;
+  position: absolute;
+  background-color: #fefbfb;
+  width: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(96, 95, 95, 0.2);
+  z-index: 1; }
+
+/* Ссылки внутри выпадающего списка */
+.drop_add a {
+  color: #131313;
+  font-size: 18px;
+  text-decoration: none;
+  display: block; }
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.drop_add a:hover {
+  background-color: #6da0b4;
+  color: white; }
+
+/* Показать выпадающее меню при наведении курсора */
+.header_menu_item.drop:hover .drop_add {
+  display: block; }
+
+.fast-search__input {
+  width: 376px;
+  height: 66px;
+  border-radius: 36px;
+  border: none;
+  background-color: #fafafa;
+  margin-right: 30px; }
+
+/*# sourceMappingURL=header.css.map */
