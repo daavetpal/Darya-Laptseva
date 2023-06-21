@@ -1,4 +1,4 @@
-@mixin btn ($w: 294px, $h: 59px)
+@mixin btn($w: 294px, $h: 59px)
 {
     width: $w;
     height: $h;
@@ -11,7 +11,7 @@
     position: relative;
 }
 
-@mixin font ($wght: 400)
+@mixin font($wght: 400)
 {
     font-family: 'Evolventa';
     font-style: normal;

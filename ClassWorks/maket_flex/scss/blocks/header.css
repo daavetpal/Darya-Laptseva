@@ -40,6 +40,9 @@ header {
     -ms-flex-align: center;
     margin-right: 179px; }
     .header_menu .header_logo p:first-child {
+      font-family: 'Evolventa';
+      font-style: normal;
+      font-weight: 700;
       color: #FFFFFF;
       font-size: 37px;
       line-height: 170%;
@@ -87,6 +90,9 @@ menu {
     line-height: 140%;
     letter-spacing: 0.02em; }
 
+.header_tel {
+  margin-right: 64px; }
+
 .header_tel a {
   font-family: 'Evolventa';
   font-style: normal;
@@ -102,7 +108,7 @@ menu {
   color: #fff; }
 
 .header_text {
-  padding-top: 23px;
+  padding-top: 83px;
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.02em;
@@ -135,7 +141,7 @@ button svg {
 
 .btn_game {
   width: 207px;
-  height: 59;
+  height: 59px;
   background: #FFFFFF;
   border-radius: 10px;
   font-size: 16px;
