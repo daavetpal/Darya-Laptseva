@@ -45,6 +45,7 @@ header
             $wght: 700;
             & p:first-child
             {
+                @include font($wght);
                 color: #FFFFFF;
                 font-size: 37px;
                 line-height: 170%;
@@ -106,6 +107,11 @@ menu
     }
 }
 
+.header_tel
+{
+    margin-right: 64px;
+}
+
 
 $wght: 700;
 .header_tel a
@@ -125,7 +131,7 @@ $wght: 700;
 
 .header_text
 {
-    padding-top: 23px;
+    padding-top: 83px;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.02em;
@@ -162,7 +168,7 @@ button svg
 }
 
 $w: 207px; 
-$h: 59;
+$h: 59px;
 .btn_game
 {
     @include btn ($w, $h)
