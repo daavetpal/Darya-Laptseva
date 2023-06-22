@@ -1,6 +1,7 @@
 @charset "UTF-8";
 header {
-  height: 204px; }
+  height: 204px;
+  width: 100vw; }
 
 .header_inner {
   display: flex;
