@@ -1,0 +1,14 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 260px 0 260px; }
+
+.banner_img {
+  background: url(..//..//img/) no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+
+.offer_banner.space {
+  gap: 36px; }
+
+/*# sourceMappingURL=homepage.css.map */
