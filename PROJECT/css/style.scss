@@ -1,4 +1,5 @@
 @import "header.scss";
+@import "homepage.scss";
 @import "footer.scss";
 
 *, *::before, *::after 
@@ -17,4 +18,5 @@ body
     font-style: normal;
     font-family: 'Roboto';
     font-size: 18px;
+    max-width: 1920px;
 }

@@ -1,17 +1,17 @@
 header {
     height: 204px;
+    width: 100%;
 }
 
 .header_inner {
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+
     align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    margin-top: 69px;
 
     .header_logo {
 
@@ -36,12 +36,14 @@ header {
     .header_menu_item
     {
         display: inline;
-        text-decoration: none;
         color: #274C5B;
         font-size: 20px;
         margin-left: 18px;
     }
-
+  a.header_menu_link
+  {
+    text-decoration: none;
+  }
   
   /* необходим для размещения выпадающего содержимого */
   .header_menu_item.drop {
@@ -81,6 +83,13 @@ color: white;}
     border-radius: 36px;
     border: none;
     background-color: #fafafa;
+    background-image: url(..//img/SearchIcon.svg);
+    background-repeat: no-repeat;
+    background-size: 56px 56px;
     margin-right: 30px;
+    position: absolute;
+    padding-left: 314px;
+    background-position: 6px 5px;
+
 }
-  
+
