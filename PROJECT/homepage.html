@@ -24,7 +24,10 @@
                 </a>
             </div>
             <nav class="header_menu">
-                <ul class="header_menu_list">
+                <input type="checkbox" class="check" id="click-1" hidden>
+                <div class="nav_wrap" aria-hidden="true">
+                    <label class="nav_menu" for="click1"></label>
+                 <ul class="header_menu_list">
                     <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
                     <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
                     <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
@@ -39,14 +42,30 @@
                     <li class="header_menu_item"><a  class="header_menu_link"href="#">News</a>
                     </li>
                 </ul>
+                </div>
             </nav>
-            <div class="header_buttons">
+            <div class="header_buttons search">
                 <form action method="POST" class="search_form">
-                <input class="fast-search__input" type="text" tabindex="1" name="search"></form>
-                <button class="basket_header">
-                    <span>Cart(0)</span>
+                <input class="fast-search_input" id="search1" type="text" tabindex="1" name="search" autocomplete="off">
+                   <button class="search_btn" type="submit" name="search_btn">
+                 <i class="icon_search"></i>
+                 </button>
+              </form>
+                <button class="basket_btn" type="submit" name="basket_btn">
+                    <span class="basket_text">Cart(0)</span>
+                    <i class="basket_header"></i>
                 </button>
+                
             </div>
+        </div>
+        <div class="header_burger">
+            <label for="click-1">
+                <div class="header_button-burg">
+                    <span class="burger_line line-1"></span>
+                    <span class="burger_line line-2"></span>
+                    <span class="burger_line line-3"></span>
+                </div>
+            </label>
         </div>
     </header>
         <div class="banner">
@@ -90,6 +109,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
         crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
 </body>
