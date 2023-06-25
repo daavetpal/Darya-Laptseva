@@ -11,30 +11,72 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-$(document).ready(function(){
-    var open = $('#header_burger');
-    var close = $('#burger_close');
-    var menu = $('#menu');
+const menu = document.querySelector('.header_menu'),
+			burger = document.querySelector('.burger'),
+			overlay = document.querySelector('.overlay'),
+      btnCloseMenu = menu.querySelector('.burger_close'),
+      swiper1 = document.querySelector('.slider__container'),
+			swiper2 = document.querySelector('.swiper');
 
-    menu.on('click', 'a', function(event){
-        event.preventDefault();
-        var link = $(event.currentTarget).attr('href');
-        var top = $(link).offset().top;
-        $('body, html').animate({scrollTop: top-50}, 800)
-    })
+// Swiper
+let swiperSlider1 = new Swiper(swiper1, {
+  //Optional parameters
+	centeredSlides: true,
+	slidesPerView: 'auto', /*позволяет ширину слайдов задавать самим*/
+  loop: true,
+  spaceBetween: 10,
 
-    open.click(function(){
-        menu.attr('class', 'menu__mobile--visible');
-        $(this).attr('class', '');
-        close.attr('class', 'active');
-    });
+//Navigation arrows
+    navigation: {
+      nextEl: '.swiper__btn-right',
+      prevEl: '.swiper__btn-left',
+    },
 
-    close.click(function(){
-        menu.attr('class', '');
-        $(this).attr('class', '');
-        open.attr('class', 'active');
-    });
+//Autoplay
+    autoplay: {
+      delay: 3000,
+    },
+  
 });
+
+const swiperSlider2 = new Swiper(swiper2, {
+  // Optional parameters
+  centeredSlides: true,
+	slidesPerView: 'auto', /*позволяет ширину слайдов задавать самим*/
+  loop: true,
+  spaceBetween: 10,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+	  type: 'bullets',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.testimonials__btn-right',
+    prevEl: '.testimonials__btn-left',
+  },
+
+});
+
+/* Burger */
+burger.onclick = () => {
+	menu.classList.add('open');
+	overlay.classList.add('open');
+}
+
+overlay.onclick = () => {
+	menu.classList.remove('open');
+	overlay.classList.remove('open');
+	unlockScroll();
+}
+
+btnCloseMenu.onclick = () => {
+  	menu.classList.remove('open');
+	overlay.classList.remove('open');
+}
+
 
 var cards = [
    

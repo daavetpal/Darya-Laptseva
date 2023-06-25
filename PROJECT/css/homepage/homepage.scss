@@ -1,8 +1,12 @@
+.block{
+    width: 100%;
+    height: 100px;
+    background-color: #FFF;
+}
 /*главный баннер после хедера*/
 .banner {
-    width: 100%;
+    width: 100vw;
     position: relative;
-    margin-top: 204px;
 }
 
 .banner_img {
@@ -20,7 +24,6 @@
     font-size: 36px;
     font-family: 'Yellowtail', cursive;
     margin-bottom: 23px;
-    position: absolute;
 }
 
 .banner_head {
@@ -59,11 +62,16 @@
 }
 
 /*баннеры-рекламные*/
+.offer_banner
+{
+    width: 100vw;
+    height: 711px;
+}
 .offer_banner_wrap {
+    padding-top: 154px;
     display: flex;
     align-items: center;
-    gap: 36px;
-    margin-top: 154px;
+    gap: 36px
 }
 
 .offer_banner_space {
@@ -113,7 +121,10 @@
     background-color: #E6E7E9;
     background: url(..//..//img/offer1.jpg) no-repeat;
     background-size: contain;
-    transition: 5s ease all;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    transition: transform 1s ease all;
 
 }
 /*section about*/
@@ -242,6 +253,7 @@ position: absolute;
 .weare_wrap
 {
     height: 931px;
+    width: 100vw;
     background: url(..//..//img/landscape.jpg) no-repeat;
     position: relative;
 }
