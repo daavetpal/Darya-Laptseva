@@ -1,6 +1,6 @@
 /*главный баннер после хедера*/
 .banner {
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin-top: 204px;
 }
@@ -20,6 +20,7 @@
     font-size: 36px;
     font-family: 'Yellowtail', cursive;
     margin-bottom: 23px;
+    position: absolute;
 }
 
 .banner_head {
@@ -56,6 +57,7 @@
         height: 19px;
     }
 }
+
 /*баннеры-рекламные*/
 .offer_banner_wrap {
     display: flex;
@@ -72,30 +74,37 @@
 }
 
 .offer_banner_space.first {
-    background: url(..//..//img/offer1.jpg) no-repeat;
-    background-size: contain;
+    background: url(..//..//img/offer1.jpg) lightgray 50% / cover no-repeat;
+}
+
+.offer_banner_space.second {
+    background: url(..//..//img/offer2.jpg) lightgray 50% / cover no-repeat;
 }
 
 .space_text {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
     padding-left: 55px;
     padding-top: 118px;
-    color: #FFF;
-    font-size: 36px;
-    font-family: Yellowtail;
     margin: 0;
-    position: absolute;
+
+    p {
+        color: #FFF;
+        font-size: 36px;
+        font-family: Yellowtail;
+    }
+
+    h3 {
+        color: #FFF;
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: 800;
+    }
 }
 
-.space_head {
-    color: #FFF;
-    font-size: 40px;
-    font-family: Roboto;
-    font-weight: 800;
-    padding-left: 55px;
-    padding-top: 118px;
-    margin: 0;
-    position: absolute;
-}
 
 .offer_banner_space:hover {
     width: 100px;
@@ -106,4 +115,222 @@
     background-size: contain;
     transition: 5s ease all;
 
+}
+/*section about*/
+.about_banner {
+    width: 100vw;
+    height: 1067px;
+    position: relative;
+    margin-top: 154px;
+    background-color: #F9F8F8;
+    margin-bottom: 176px;
+}
+.about_banner_image
+{
+    width: 911px;
+    height: 867px;
+    padding-top: 87px;
+    padding-left: 100px;
+    background: url(..//..//img/aboutban.jpg) lightgray 50% / cover no-repeat,
+    #F9F8F8;
+}
+.about_content
+{
+padding-left: 958px;
+display: flex;
+width: 702px;
+flex-direction: column;
+align-items: flex-start;
+gap: 46px;
+
+}
+.cards_head p
+{
+    text-align: center;
+color: #7EB693;
+font-size: 36px;
+font-family: Yellowtail;
+}
+.cards_head h2
+{
+    color: #274C5B;
+text-align: center;
+font-size: 50px;
+font-family: Roboto;
+font-weight: 800;
+margin-top: 8px;
+margin-bottom: 40px;
+}
+
+#group_cards
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    grid-gap: 20px;
+}
+
+/*card bootstrap style*/
+.card
+{ 
+    height: 483px;
+    border-radius: 30px;
+    background: #F9F8F8;
+    border: 0;
+}
+.card-img-top
+{padding-top: 73px;}
+.type
+{
+    width: 72px; 
+    height: 20px; 
+    border-radius: 8px;
+    background: #274C5B; 
+    margin: 29px 0 0 30px;
+}
+.card_description
+{
+    border-top: 1px solid #DEDDDD; 
+    margin-top: 13px;
+}
+.testimonial_wrap {
+    width: 100vw;
+    height: 1267px;
+    position: relative;
+    margin-top: 200px;
+    background:
+    url(..//../img/testimon-left.jpg) top left no-repeat,
+    url(..//../img/testimon-right.jpg) top right no-repeat,
+    #FCFCFC;
+    background-size: lightgray 50% / cover;
+}
+.testimonial_content
+{display: flex;
+width: 1108px;
+flex-direction: column;
+align-items: center;
+gap: 102px;
+margin-top:164px;
+margin-left: 181px;}
+.counters
+{
+    display: flex;
+width: 1030px;
+justify-content: center;
+align-items: flex-start;
+gap: 62px;
+.counter{
+    width: 211px;
+    height: 211px;
+    border-radius: 211px;
+background: #7EB693;
+position: relative;
+.circle{
+    border-radius: 189px;
+background: #F1F1F1;
+position: absolute;
+}
+}
+}
+.offer_products
+{
+    width: 100vw;
+    height: 1050px;
+    position: relative;
+    background: #274C5B;
+}
+.weare_wrap
+{
+    height: 931px;
+    background: url(..//..//img/landscape.jpg) no-repeat;
+    position: relative;
+}
+.weare_block
+{
+    width: 358px;
+height: 723px;
+padding-top: 100px;
+position: absolute;
+background: #FFF;
+top: 100px;
+left: 871px;
+
+}
+.weare_content
+{width: 700px;
+padding-top: 78px;
+padding-left: 89px;
+display: flex;
+width: 700px;
+flex-direction: column;
+align-items: flex-start;
+gap: 35px;}
+
+.weare_heading p
+{
+color: #7EB693;
+font-size: 36px;
+font-family: Yellowtail;
+margin-bottom: 8px;
+}
+.weare_heading h3
+{
+color: #274C5B;
+font-size: 50px;
+font-family: Roboto;
+font-weight: 800;
+}
+.weare_points h1{
+    color: #274C5B;
+font-size: 25px;
+font-family: Roboto;
+font-weight: 500;
+margin-bottom: 8px;;
+}
+.weare_points p{
+    color: #525C60;
+font-size: 18px;
+font-family: Open Sans;
+line-height: 165.4%;
+}
+.gallery_wrap
+{
+    width: 100vw;
+    height: 583px;
+    position: relative;
+padding: 187px 0px;
+background: #F1F8F4;
+}
+.gallery
+{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: 42px;
+}
+.gel_image
+{
+height: 583px;
+}
+.gel_image.first
+{
+    background: url(..//..//img/juice.jpg) top left no-repeat;
+    background-size: contain;
+}
+.btn_gallery
+{
+    width: 320px;
+    height: 96px;
+    border-radius: 20px;
+background: #FFF;
+border: 0;
+color: #274C5B;
+font-size: 25px;
+font-family: Roboto;
+font-weight: 500;
+margin-left: 146px;
+}
+.btn_gallery:hover
+{
+    background: #D4D4D4;
 }

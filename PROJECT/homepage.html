@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&family=Yellowtail&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" style="top: 0; visibility: visible;">
         <div class="container">
             <div class="header_inner">
                 <div class="header_logo">
@@ -29,7 +27,7 @@
                     <input type="checkbox" class="check" id="click-1" hidden>
                     <div class="nav_wrap" aria-hidden="true">
                         <label class="nav_menu" for="click1">
-                            <ul class="header_menu_list">
+                            <ul id="menu" class="header_mobile--hidden">
                                 <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
                                 <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
                                 <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
@@ -65,7 +63,14 @@
                         </button>
                     </div>
                 </div>
-                <div class="header_burger">
+                <div id="header_burger open">
+                    <label for="click-1">
+                        <span class="burger_line line-1"></span>
+                        <span class="burger_line line-2"></span>
+                        <span class="burger_line line-3"></span>
+                </div>
+                </label>
+                <div id="burger_close">
                     <label for="click-1">
                         <span class="burger_line line-1"></span>
                         <span class="burger_line line-2"></span>
@@ -95,42 +100,135 @@
                 <div class="container_main">
                 <div class="offer_banner_wrap">
                     <div class="offer_banner_space first">
-                        <p class="space_text">Natural!!</p>
-                        <h3 class="space_head">Get Garden<br>Fresh Fruits</h3>
+                        <div class="space_text">
+                            <p>Natural!!</p>
+                            <h3>Get Garden<br>Fresh Fruits</h3>
+                        </div>
                     </div>
                     <div class="offer_banner_space second">
-                        <p class="space_text"></p>
-                        <h3 class="space_head"></h3>
+                        <div class="space_text">
+                            <p>Offer!!</p>
+                            <h3>Get 10% off<br>on Vegetables</h3>
+                        </div>
                     </div>
                 </div>
                 </div>
             </div>
         </section>
+        <section class="about_banner">
+            <div class="about_banner_image"></div>
+            <div class="container">
+                <div class="container_main">
+                        <div class="about_content">
+                            <div class="about_content_heading">
+                                <p>About Us</p>
+                                <h3>We Believe in Working<br>
+                                    Accredited Farmers</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards_wrap">
+            <div class="container">
+                <div class="container_main">
+                    <div class="cards_head">
+                        <p>Categories</p>
+                        <h2>Our Products</h2>
+                    </div>
+                    <button data-blabla="render"></button>
+                    <div id="group_cards">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial_wrap">
+            <div class="container">
+                <div class="container_main">
+                    <div class="testimonial_content">
+                        <div class="counters">
+                            <div class="counter">
+                                <div class="circle">
+                                    <span>Organic</span>
+                                </div>
+                            </div>
+                            <div class="counter"></div>
+                            <div class="counter"></div>
+                            <div class="counter"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer_products">
+            <div class="container">
+                <div class="container_main">
+                    <div class="cards_head2">
+                        <p>Offer</p>
+                        <h2>We Offer Organic For You</h2>
+                    </div>
+                    <button data-blabla="render"></button>
+                    <div id="group_cards2">
+                    </div>
+                </div>
+
+        </section>
+        <section class="weare_wrap">
+            <div class="weare_block">
+                        <div class="weare_content">
+                            <div class="weare_heading">
+                                <p>Eco Friendly</p>
+                                <h3>Econis is a Friendly<br>
+                                    Organic Store<h3>
+                            </div>
+                            <div class="weare_points">
+                                <h1>Start with Our Company First</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.
+                                </p>
+                            </div>
+                            <div class="weare_points">
+                                <h1>Learn How to Grow Yourself</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.
+                                </p>
+                            </div>
+                            <div class="weare_points">
+                                <h1>Farming Strategies of Today</h1>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.
+                                </p>
+                            </div>
+                        </div>
+            </div>
+        </section>
+        <section class="gallery_wrap">
+            <div class="gallery">
+                <div class="gel_image first">
+                    <button class="btn_gallery" type="button">Organic Juice</button>
+                </div>
+                <div class="gel_image second">
+                    <button class="btn_gallery" type="button">Organic Food</button>
+                </div>
+                <div class="gel_image third">
+                    <button class="btn_gallery" type="button">Organic Food</button>
+                </div>
+            </div>
+            
+        </section>
     </main>
-    <div class="about_banner">
-        <div class="container">
-            <div class="offer_banner">
-                <p class="offer_banner space_text"></p>
-                <p class="offer_banner space_text"></p>
-            </div>
-            <div class="offer_banner ">
-                <p class="offer_banner space_text"></p>
-                <p class="offer_banner space_text"></p>
-            </div>
-        </div>
-    </div>
-    <div>
+    
         <button class="offer_banner_btn"></button>
     </div>
     <footer>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="javascript.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
