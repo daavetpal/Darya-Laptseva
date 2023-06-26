@@ -11,72 +11,9 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-const menu = document.querySelector('.header_menu'),
-			burger = document.querySelector('.burger'),
-			overlay = document.querySelector('.overlay'),
-      btnCloseMenu = menu.querySelector('.burger_close'),
-      swiper1 = document.querySelector('.slider__container'),
-			swiper2 = document.querySelector('.swiper');
-
-// Swiper
-let swiperSlider1 = new Swiper(swiper1, {
-  //Optional parameters
-	centeredSlides: true,
-	slidesPerView: 'auto', /*позволяет ширину слайдов задавать самим*/
-  loop: true,
-  spaceBetween: 10,
-
-//Navigation arrows
-    navigation: {
-      nextEl: '.swiper__btn-right',
-      prevEl: '.swiper__btn-left',
-    },
-
-//Autoplay
-    autoplay: {
-      delay: 3000,
-    },
-  
-});
-
-const swiperSlider2 = new Swiper(swiper2, {
-  // Optional parameters
-  centeredSlides: true,
-	slidesPerView: 'auto', /*позволяет ширину слайдов задавать самим*/
-  loop: true,
-  spaceBetween: 10,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-	  type: 'bullets',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.testimonials__btn-right',
-    prevEl: '.testimonials__btn-left',
-  },
-
-});
-
-/* Burger */
-burger.onclick = () => {
-	menu.classList.add('open');
-	overlay.classList.add('open');
-}
-
-overlay.onclick = () => {
-	menu.classList.remove('open');
-	overlay.classList.remove('open');
-	unlockScroll();
-}
-
-btnCloseMenu.onclick = () => {
-  	menu.classList.remove('open');
-	overlay.classList.remove('open');
-}
-
+document.querySelector(".header_burger").onclick = () => {
+    document.querySelector(".header_button").classList.toggle("change");
+  };
 
 var cards = [
    

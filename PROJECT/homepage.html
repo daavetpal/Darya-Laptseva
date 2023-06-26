@@ -26,14 +26,11 @@
                     </a>
                 </div>
                 <nav class="header_menu">
-                    <input type="checkbox" class="check" id="click-1" hidden>
+                    <input type="checkbox" class="check" id="click" hidden>
                     <div class="nav_wrap" aria-hidden="true">
                         <label class="nav_menu" for="click1">
-                            <button class="menu_close btn-reset">
-                                <span class="menu_close-line"></span>
-                                <span class="menu_close-line"></span>
-                            </button>
-                            <ul id="menu" class="header_mobile--hidden">
+                            <div class="nav_checking">
+                            <ul class="header_menu_list">
                                 <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
                                 <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
                                 <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
@@ -51,6 +48,7 @@
                                 <li class="header_menu_item"><a class="header_menu_link" href="#">News</a>
                                 </li>
                             </ul>
+                            </div>
                         </label>
                     </div>
                 </nav>
@@ -69,19 +67,14 @@
                         </button>
                     </div>
                 </div>
-                <div id="header_burger open">
-                    <label for="click-1">
+                <div id="header_burger">
+                    <label for="click">
+                        <div class="header_button">
                         <span class="burger_line line-1"></span>
                         <span class="burger_line line-2"></span>
                         <span class="burger_line line-3"></span>
+                    </div>
                 </div>
-                </label>
-                    <label for="click-1">
-                        <button id="burger_close">
-                        <span class="burger_line line-1"></span>
-                        <span class="burger_line line-2"></span>
-                        <span class="burger_line line-3"></span>
-                        </button>
                 </label>
             </div>
         </div>
