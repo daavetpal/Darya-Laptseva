@@ -11,59 +11,59 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-document.querySelector(".header_burger").onclick = () => {
-    document.querySelector(".header_button").classList.toggle("change");
-  };
-
 var cards = [
    
     {
-        imgUrl: "",
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
         type: "Vegetable",
-        sale: true,
-        text: "Eggs"
+        text: "Calabrese Broccollis",
+        old: "$20.00",
+        new: "$13.00"
     },
     {
-        imgUrl: "",
-        title: "Fresh",
-        sale: false,
-        text: "Новый BMW XM построен на гибридной платформе, которая состоит из бензинового двигателя V8 объёмом 4,4 литра мощностью 489 л.с. с 650 Нм крутящего момента и электромотора мощностью 196 л.с. Автомобиль получил восьмиступенчатую автоматическую коробку передач M Steptronic."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/banan.png",
+        type: "Fresh",
+        text: "Fresh Banana Fruites",
+        old: "$20.00",
+        new: "$14.00"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/nuts.png",
+        type: "Millets",
+        text: "White Nuts",
+        old: "$20.00",
+        new: "$15.00"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/tomato.png",
+        type: "Vegetable",
+        text: "Vegan Red Tomato",
+        old: "$20.00",
+        new: "$17.00"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/bean.png",
+        type: "Health",
+        text: "Mung Bean",
+        description: "Calabrese Broccolli"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/hazelnut.png",
+        type: "Nuts",
+        text: "Brown Hazelnut",
+        description: "Calabrese Broccolli"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/.png",
+        type: "Fresh",
+        text: "Calabrese Broccollis",
+        description: "Calabrese Broccolli"
     },
     {
-        imgUrl: "https://avatars.mds.yandex.net/get-verba/787013/2a000001609d0898e5f4cbbd14057098e52d/cattouchret",
-        title: "Audi A7",
-        sale: true,
-        text: "(4G) Рестайлинг – лифтбек E-класса, полный и передний привод. Робот и автомат. Бензиновые и дизельные двигатели мощностью от 218 до 338 лошадиных сил."
+        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        type: "Fresh",
+        text: "Zelco Suji Elaichi Rusk",
+        description: "Calabrese Broccolli"
     }
 ];
 
@@ -73,14 +73,14 @@ var app = document.getElementById('group_cards');
 function render(){
     var str = "";
 
-    for(var i = 0; i < cards.length; i++){
+ for(var i = 0; i < cards.length; i++){
         str+= `
         <div class="card">
-            <div class='type'><span class="card-type">${cards[i].type}</span></div>
+            <div class='type'><span class='card-type'>${cards[i].type}</span></div>
             <img src="${cards[i].imgUrl}" class="card-img-top" "alt="${cards[i].imgUrl}">
             <div class="card-body">
     <p class="card-text">${cards[i].text}</p>
-    <div class="card-description">${cards[i].text}</div>
+    <div class="card-description"><span class="old-price">${cards[i].old}</span><span class="old-price">${cards[i].new}</span></div>
   </div>
 </div>
         </div>`
@@ -89,3 +89,7 @@ function render(){
 }
 
 render();
+
+document.querySelector(".header_burger").onclick = () => {
+    document.querySelector(".header_button").classList.toggle("change");
+  };

@@ -17,216 +17,221 @@
 </head>
 
 <body>
-    <header class="header" style="top: 0; visibility: visible;">
-        <div class="container">
-            <div class="header_inner">
-                <div class="header_logo">
-                    <a href="homepage.html" class="logo" target="_blank">
-                        <img src="img/Logo.svg" alt="organick logo" title="organick logo">
-                    </a>
-                </div>
-                <nav class="header_menu">
-                    <input type="checkbox" class="check" id="click" hidden>
-                    <div class="nav_wrap" aria-hidden="true">
-                        <label class="nav_menu" for="click1">
-                            <div class="nav_checking">
-                            <ul class="header_menu_list">
-                                <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
-                                <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
-                                <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
-                                    <ul class="drop_add">
-                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Services</a>
+        <header class="header" style="top: 0; visibility: visible;">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="header_logo">
+                        <a href="homepage.html" class="logo" target="_blank">
+                            <img src="img/Logo.svg" alt="organick logo" title="organick logo">
+                        </a>
+                    </div>
+                    <nav class="header_menu">
+                        <input type="checkbox" class="check" id="click" hidden>
+                        <div class="nav_wrap" aria-hidden="true">
+                            <label class="nav_menu" for="click1">
+                                <div class="nav_checking">
+                                    <ul class="header_menu_list">
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
+                                        <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
+                                            <ul class="drop_add">
+                                                <li class="header_menu_item"><a class="header_menu_link"
+                                                        href="#">Services</a>
+                                                </li>
+                                                <li class="header_menu_item"><a class="header_menu_link"
+                                                        href="#">Quality
+                                                        Standard</a></li>
+                                                <li class="header_menu_item"><a class="header_menu_link"
+                                                        href="#">Portfolio
+                                                        Standards</a>
+                                            </ul>
                                         </li>
-                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Quality
-                                                Standard</a></li>
-                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Portfolio
-                                                Standards</a>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Shop</a></li>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Projects</a>
+                                        </li>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">News</a>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li class="header_menu_item"><a class="header_menu_link" href="#">Shop</a></li>
-                                <li class="header_menu_item"><a class="header_menu_link" href="#">Projects</a></li>
-                                <li class="header_menu_item"><a class="header_menu_link" href="#">News</a>
-                                </li>
-                            </ul>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                    <div class="header_buttons search">
+                        <form action method="POST" class="search_form">
+                            <input class="fast-search_input" id="search1" type="text" tabindex="1" name="search"
+                                autocomplete="off">
+                            <button class="search_btn" type="submit" name="search_btn">
+                                <i class="icon_search"></i>
+                            </button>
+                        </form>
+                        <div class="basket">
+                            <button class="basket_btn" type="submit" name="basket_btn">
+                                <span class="basket_text">Cart(0)</span>
+                                <i class="basket_header"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="header_burger">
+                        <label for="click">
+                            <div class="header_button">
+                                <span class="burger_line line-1"></span>
+                                <span class="burger_line line-2"></span>
+                                <span class="burger_line line-3"></span>
                             </div>
-                        </label>
                     </div>
-                </nav>
-                <div class="header_buttons search">
-                    <form action method="POST" class="search_form">
-                        <input class="fast-search_input" id="search1" type="text" tabindex="1" name="search"
-                            autocomplete="off">
-                        <button class="search_btn" type="submit" name="search_btn">
-                            <i class="icon_search"></i>
-                        </button>
-                    </form>
-                    <div class="basket">
-                        <button class="basket_btn" type="submit" name="basket_btn">
-                            <span class="basket_text">Cart(0)</span>
-                            <i class="basket_header"></i>
-                        </button>
-                    </div>
+                    </label>
                 </div>
-                <div id="header_burger">
-                    <label for="click">
-                        <div class="header_button">
-                        <span class="burger_line line-1"></span>
-                        <span class="burger_line line-2"></span>
-                        <span class="burger_line line-3"></span>
-                    </div>
-                </div>
-                </label>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="block"></div>
-        <section class="banner">
-            <div class="banner_img">
+        </header>
+    <div id="wrapper">
+        <main>
+            <div class="block"></div>
+            <section class="banner">
+                <div class="banner_img">
+                    <div class="container">
+                        <div class="container_main">
+                            <p class="banner_text">100% Natural food</p>
+                            <h1 class="banner_head">Choose the best<br>healthier way<br>of life</h1>
+                            <button class="banner_btn">
+                                <p class="banner_btn_text">Explore Now</p>
+                                <img src="img/Aerrow.svg" alt="aerrow" title="aerrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offer_banner">
                 <div class="container">
                     <div class="container_main">
-                        <p class="banner_text">100% Natural food</p>
-                        <h1 class="banner_head">Choose the best<br>healthier way<br>of life</h1>
-                        <button class="banner_btn">
-                            <p class="banner_btn_text">Explore Now</p>
-                            <img src="img/Aerrow.svg" alt="aerrow" title="aerrow">
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="offer_banner">
-            <div class="container">
-                <div class="container_main">
-                    <div class="offer_banner_wrap">
-                        <div class="offer_banner_space first">
-                            <div class="space_text">
-                                <p>Natural!!</p>
-                                <h3>Get Garden<br>Fresh Fruits</h3>
-                            </div>
-                        </div>
-                        <div class="offer_banner_space second">
-                            <div class="space_text">
-                                <p>Offer!!</p>
-                                <h3>Get 10% off<br>on Vegetables</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about_banner">
-            <div class="about_banner_image"></div>
-            <div class="container">
-                <div class="container_main">
-                    <div class="about_content">
-                        <div class="about_content_heading">
-                            <p>About Us</p>
-                            <h3>We Believe in Working<br>
-                                Accredited Farmers</h3>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="cards_wrap">
-            <div class="container">
-                <div class="container_main">
-                    <div class="cards_head">
-                        <p>Categories</p>
-                        <h2>Our Products</h2>
-                    </div>
-                    <button data-blabla="render"></button>
-                    <div id="group_cards">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="testimonial_wrap">
-            <div class="container">
-                <div class="container_main">
-                    <div class="testimonial_content">
-                        <div class="counters">
-                            <div class="counter">
-                                <div class="circle">
-                                    <span>Organic</span>
+                        <div class="offer_banner_wrap">
+                            <div class="offer_banner_space first">
+                                <div class="space_text">
+                                    <p>Natural!!</p>
+                                    <h3>Get Garden<br>Fresh Fruits</h3>
                                 </div>
                             </div>
-                            <div class="counter"></div>
-                            <div class="counter"></div>
-                            <div class="counter"></div>
+                            <div class="offer_banner_space second">
+                                <div class="space_text">
+                                    <p>Offer!!</p>
+                                    <h3>Get 10% off<br>on Vegetables</h3>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about_banner">
+                <div class="about_banner_image"></div>
+                <div class="container">
+                    <div class="container_main">
+                        <div class="about_content">
+                            <div class="about_content_heading">
+                                <p>About Us</p>
+                                <h3>We Believe in Working<br>
+                                    Accredited Farmers</h3>
+                            </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="offer_products">
-            <div class="container">
-                <div class="container_main">
-                    <div class="cards_head2">
-                        <p>Offer</p>
-                        <h2>We Offer Organic For You</h2>
-                    </div>
-                    <button data-blabla="render"></button>
-                    <div id="group_cards2">
+                        </div>
                     </div>
                 </div>
 
-        </section>
-        <section class="weare_wrap">
-            <div class="weare_block">
-                <div class="weare_content">
-                    <div class="weare_heading">
-                        <p>Eco Friendly</p>
-                        <h3>Econis is a Friendly<br>
-                            Organic Store<h3>
-                    </div>
-                    <div class="weare_points">
-                        <h1>Start with Our Company First</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
-                            laudantium. Sed ut perspiciatis.
-                        </p>
-                    </div>
-                    <div class="weare_points">
-                        <h1>Learn How to Grow Yourself</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
-                            laudantium. Sed ut perspiciatis.
-                        </p>
-                    </div>
-                    <div class="weare_points">
-                        <h1>Farming Strategies of Today</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
-                            laudantium. Sed ut perspiciatis.
-                        </p>
+            </section>
+            <section class="cards">
+                <div class="container">
+                    <div class="container_main">
+                        <div class="cards_head">
+                            <p>Categories</p>
+                            <h2>Our Products</h2>
+                        </div>
+                        <button data-blabla="render"></button>
+                        <div id="group_cards">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="gallery_wrap">
-            <div class="gallery">
-                <div class="gel_image first">
-                    <button class="btn_gallery" type="button">Organic Juice</button>
-                </div>
-                <div class="gel_image second">
-                    <button class="btn_gallery" type="button">Organic Food</button>
-                </div>
-                <div class="gel_image third">
-                    <button class="btn_gallery" type="button">Organic Food</button>
-                </div>
-            </div>
+            </section>
+            <section class="testimonial">
+                <div class="container">
+                    <div class="container_main">
+                        <div class="testimonial_content">
+                            <div class="counters">
+                                <div class="counter">
+                                    <div class="circle">
+                                        <span>Organic</span>
+                                    </div>
+                                </div>
+                                <div class="counter"></div>
+                                <div class="counter"></div>
+                                <div class="counter"></div>
+                            </div>
 
-        </section>
-    </main>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="offer_products">
+                <div class="container">
+                    <div class="container_main">
+                        <div class="cards_head2">
+                            <p>Offer</p>
+                            <h2>We Offer Organic For You</h2>
+                        </div>
+                        <button data-blabla="render"></button>
+                        <div id="group_cards2">
+                        </div>
+                    </div>
 
-    <button class="offer_banner_btn"></button>
+            </section>
+            <section class="weare">
+                <div class="weare_block">
+                    <div class="weare_content">
+                        <div class="weare_heading">
+                            <p>Eco Friendly</p>
+                            <h3>Econis is a Friendly<br>
+                                Organic Store<h3>
+                        </div>
+                        <div class="weare_points">
+                            <h1>Start with Our Company First</h1>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
+                                laudantium. Sed ut perspiciatis.
+                            </p>
+                        </div>
+                        <div class="weare_points">
+                            <h1>Learn How to Grow Yourself</h1>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
+                                laudantium. Sed ut perspiciatis.
+                            </p>
+                        </div>
+                        <div class="weare_points">
+                            <h1>Farming Strategies of Today</h1>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque
+                                laudantium. Sed ut perspiciatis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery_wrap">
+                <div class="gallery">
+                    <div class="gel_image first">
+                        <button class="btn_gallery" type="button">Organic Juice</button>
+                    </div>
+                    <div class="gel_image second">
+                        <button class="btn_gallery" type="button">Organic Food</button>
+                    </div>
+                    <div class="gel_image third">
+                        <button class="btn_gallery" type="button">Organic Food</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <button class="offer_banner_btn"></button>
     </div>
     <footer>
 
     </footer>
-
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

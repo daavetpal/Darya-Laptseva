@@ -1,11 +1,15 @@
 @charset "UTF-8";
-header {
+.header {
   background-color: #fff;
-  width: 100%;
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 50;
   transition: all 1s; }
+
+.header.container {
+  position: relative;
+  z-index: 50; }
 
 .header_inner {
   display: -webkit-box;
