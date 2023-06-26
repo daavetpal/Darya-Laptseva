@@ -1,0 +1,13 @@
+@mixin btn($bg: #EFD372, $h: 79px)
+{
+    width: 220px;
+    background: $bg;
+    height: $h;
+    display: flex;
+    padding: 28px 39px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 0;
+}
