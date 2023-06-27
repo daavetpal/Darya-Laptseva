@@ -1,4 +1,9 @@
-
+/*чтобы баннер не залазил под хедер*/
+.block {
+  width: 100%;
+  height: 204px;
+  background-color: #FFF;
+}
 .header {
     background-color: #fff;
     position: fixed;

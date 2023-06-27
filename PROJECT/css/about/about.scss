@@ -1,0 +1,24 @@
+@import "..//header.scss";
+@import "..//mixins.scss";
+@import "..//footer.scss";
+.header_main {
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    position: relative;
+    display: flex; 
+    background: linear-gradient(rgba(179, 173, 173, 0), rgb(118, 118, 118)), url(..//..//img//AboutBg.jpg);
+
+.header_padding {
+    padding-left: 0;
+}
+.header_main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    color: white; 
+    margin: auto;
+}
+}
