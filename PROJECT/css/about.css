@@ -550,42 +550,18 @@ i.basket_header {
   position: relative;
   background-color: #274C5B; }
 
-.products.heading {
-  padding-top: 188px; }
-  .products.heading p {
-    text-align: center;
-    color: #7EB693;
-    font-size: 36px;
-    font-family: Yellowtail;
-    padding-bottom: 33px; }
-  .products.heading h2 {
-    color: #FFF;
-    font-size: 50px;
-    font-family: Roboto;
-    font-weight: 800;
-    text-align: center; }
-
-.products_card {
-  display: flex;
-  align-items: center;
-  gap: 21px; }
-
-.card {
-  height: 314px;
-  border-radius: 30px;
-  width: 334px;
-  background-color: #F0F0F0; }
-
-.card:first-child {
-  background: url(..//img/product_offer1.png) no-repeat;
-  background-size: contain; }
-
-.card:nth-child(2) {
-  background: url(..//img/product_offer2.png) no-repeat, #F0F0F0;
-  background-size: contain; }
-
-.card:nth-child(3) {
-  background: url(..//img/product_offer3.png) no-repeat;
-  background-size: contain; }
+.products.heading p {
+  text-align: center;
+  color: #7EB693;
+  font-size: 36px;
+  font-family: Yellowtail; }
+.products.heading h2 {
+  color: #274C5B;
+  text-align: center;
+  font-size: 50px;
+  font-family: Roboto;
+  font-weight: 800;
+  margin-top: 8px;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=about.css.map */
