@@ -1,4 +1,7 @@
-@import "..//mixins.scss";
+@import "style.scss";
+@import "header.scss";
+@import "mixins.scss";
+@import "footer.scss";
 
 .btn {
     @include btn
@@ -126,10 +129,9 @@ h3 {
 }
 /*section about*/
 .about_banner {
-    width: 100%;
     height: 1067px;
     position: relative;
-    background: url(..//..//img/ban-about.jpg) no-repeat;
+    background: url(..//img/ban-about.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: auto;
@@ -214,16 +216,13 @@ $bg: #7EB693;
 
 .cards_head {
     margin-top: 176px;
-}
-
-.cards_head p {
+ p {
     text-align: center;
     color: #7EB693;
     font-size: 36px;
     font-family: Yellowtail;
 }
-
-.cards_head h2 {
+ h2 {
     color: #274C5B;
     text-align: center;
     font-size: 50px;
@@ -232,7 +231,7 @@ $bg: #7EB693;
     margin-top: 8px;
     margin-bottom: 40px;
 }
-
+}
 #group_cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -384,7 +383,7 @@ span.new-price
     height: 1267px;
     position: relative;
     background:
-        url(..//../img/testimonial_bg.jpg) no-repeat;
+        url(../img/testimonial_bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: auto;
@@ -417,7 +416,7 @@ span.new-price
 
         .circle {
             width: 189px;
-height: 189px;
+            height: 189px;
             border-radius: 189px;
             background: #F1F1F1;
             position: absolute;
@@ -457,7 +456,7 @@ gap: 20px;
 .weare {
     height: 931px;
     width: 100%;
-    background: url(..//..//img/landscape.jpg) no-repeat;
+    background: url(..//img/landscape.jpg) no-repeat;
     position: relative;
     background-size: contain;
     background-position: center;
@@ -557,22 +556,24 @@ gap: 20px;
 .gel_image {
 
     height: 583px;
+    width: 612px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .gel_image.first {
-    background: url(..//..//img/juice.jpg) top left no-repeat;
+    background: url(..//img/juice.jpg) top left no-repeat;
     background-size: contain;
 }
 
-.gel_image.first {
-    background: url(..//..//img/juice.jpg) top left no-repeat;
+.gel_image.second {
+    background: url(..//img/vegetables.jpg) top left no-repeat;
     background-size: contain;
 }
 
-.gel_image.first {
-    background: url(..//..//img/juice.jpg) top left no-repeat;
+.gel_image.third {
+    background: url(..//img/cookies1.jpg) top left no-repeat;
     background-size: contain;
 }
 
@@ -591,47 +592,7 @@ gap: 20px;
 .btn_gallery:hover {
     background: #D4D4D4;
 }
-.subscribe_wrap
-{
-    height: 323px;
-    background: url(..//..//img/subscribe_bg.jpg) no-repeat;
-    border-radius: 30px;
-    position: relative;
-    margin-bottom: 117px;
-    .content{
-        display: flex;
-width: 1258px;
-align-items: center;
-position: absolute;
-left: 71px;
-    h2
-    {
-        color: #FFF;
-font-size: 50px;
-font-family: Roboto;
-font-weight: 800;
-    }
-    .mail
-    {
-
-    }
-    .mailname
-    {
-        width: 349px;
-        height: 80px;
-        border-radius: 16px;
-        background: #FFF;
-        border: 0;
-        padding-left: 23px;
-        padding-top: 28px;
-        color: #ABABAB;
-font-size: 18px;
-font-family: Roboto;
-font-style: italic;
-    }
-}
-}
-
+/*новости*/
 .article
 {
     width: 677px;
@@ -639,13 +600,19 @@ height: 524px;
 background: #C4C4C4;
 border-radius: 30px;
 position: relative;
-
-
-.bg
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 27px;
+}
+.bg.first
 {
-    background: url(..//..//img/news1.jpg) no-repeat;
+    background: url(..//img/news1.jpg) no-repeat;
     background-size: contain;
 }
+.bg.second
+{
+    background: url(..//img/news2.jpg) no-repeat;
+    background-size: contain;
 }
 .news-to-top
 {
@@ -656,16 +623,17 @@ position: relative;
     justify-content: center;
     flex-direction: column;
 }
-.news-to-top {
+.news-to-top{
     opacity: 0;
     border-radius: 31px 34px 30px 30px;
 background: #FFF;
 box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
     transition: all 0.4s ease-in-out;
     color: #fff;
+    padding: 0 32px 0 32px;
     transform: translate(0px, 250px) rotate(0deg);
 }
-div.article:hover > div.news-to-top {
+div.article:hover > div.news-to-top{
     position: absolute;
     overflow: hidden;
     top: 265px;
@@ -673,28 +641,32 @@ div.article:hover > div.news-to-top {
     right: 32px;
     cursor: pointer;
 }
-div.article:hover > div.news-to-top  {
+div.article:hover > div.news-to-top {
     opacity: 1;
     transform: translate(0px, 0px) rotate(0deg);
     cursor: pointer;
 
 }
-.news_heading {
+.news_content {
     display: flex;
     align-items: flex-end;
-    gap: 564px;
+    gap: 478px;
     padding-top: 201px;
 }
-.news_heading p {
+.news_heading
+{
+    margin-bottom: 45px;
+ p {
     color: #7EB693;
     font-size: 36px;
     font-family: Yellowtail;
     padding-bottom: 8px;
 }
 
-.news_heading h2 {
+ h2 {
     color:#274C5B;
     font-size: 50px;
     font-family: Roboto;
     font-weight: 800;
+}
 }

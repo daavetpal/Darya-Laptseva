@@ -1,0 +1,53 @@
+@import "style.scss";
+@import "header.scss";
+@import "mixins.scss";
+@import "footer.scss";
+.header_main {
+    height: 58vh;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    position: relative;
+    display: flex; 
+    background: linear-gradient(rgba(179, 173, 173, 0), rgb(118, 118, 118)), url(..//..//img//AboutBg.jpg);
+
+.header_padding {
+    padding-left: 0;
+}
+.header_main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    color: white; 
+    margin: auto;
+}
+}
+
+/*products*/
+.offer-products
+{
+    height: 892px;
+    width: 100%;
+    position: relative;
+    background-color: #274C5B;
+}
+.products.heading {
+    
+ p {
+    text-align: center;
+    color: #7EB693;
+    font-size: 36px;
+    font-family: Yellowtail;
+}
+ h2 {
+    color: #274C5B;
+    text-align: center;
+    font-size: 50px;
+    font-family: Roboto;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+}

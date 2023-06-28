@@ -1,24 +1,150 @@
-.footer_contacts
+@import "mixins.scss";
+
+.btn {
+    @include btn
+}
+.subscribe_wrap
+{
+    height: 323px;
+    background: url(..//..//img/subscribe_bg.jpg) no-repeat;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 117px;
+    .content{
+        display: flex;
+width: 1258px;
+align-items: center;
+position: absolute;
+left: 71px;
+    h2
+    {
+        color: #FFF;
+font-size: 50px;
+font-family: Roboto;
+font-weight: 800;
+margin-right: 326px;
+    }
+    .mailname
+    {
+        width: 349px;
+        height: 80px;
+        border-radius: 16px;
+        background: #FFF;
+        border: 0;
+        padding: 28px 0 31px 23px;
+        color: #ABABAB;
+font-size: 18px;
+font-family: Roboto;
+font-style: italic;
+margin-right: 6px;
+    }
+}
+}
+$bg: #274C5B;
+$h: 80px;
+.btn.subscribe
+{
+    @include btn ($bg, $h);
+    color: #FFF;
+font-size: 20px;
+font-family: Roboto;
+font-weight: 700;
+}
+.footer_wrap
+{
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.footer h2
+{color: #274C5B;
+font-size: 30px;
+font-family: Roboto;
+font-weight: 700;
+
+}
+.footer p
+{color: #525C60;
+text-align: right;
+font-size: 18px;
+font-family: Open Sans;
+font-weight: 400;
+line-height: 165%;
+margin-bottom: 40px;
+}
+.footer_inner
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 51px 0 52px;
+    justify-content: center;
+}
+.footer.contacts
 {
     display: flex;
 width: 285px;
 flex-direction: column;
 align-items: flex-end;
 gap: 32px;
+border-right: 1px solid #D4D4D4;
+padding-right: 51px;
+
+.footer_text 
+{
+    display: flex;
+width: 285px;
+flex-direction: column;
+
+p{
+    color: #525C60;
+text-align: right;
+font-size: 18px;
+font-family: Open Sans;
+font-weight: 400;
+line-height: 165%;
+margin-bottom: 40px;
+span
+{
+font-weight: 700;
 }
-.footer_about
+}
+}
+}
+.footer.about
 {
 display: flex;
 width: 543px;
 flex-direction: column;
 align-items: center;
 gap: 23px;
+padding: 0 41px;
+border-right: 1px solid #D4D4D4;
+p
+{
+    text-align: center;
 }
-.footer_utilities
+
+.footer_icons
+{
+    padding-top: 26px;
+    svg:not(:last-child)
+    {
+        margin-right: 15px;
+    }
+}
+}
+.footer.utilities
 {
     display: flex;
 width: 285px;
 flex-direction: column;
 align-items: flex-start;
-gap: 24px;
+gap: 35px;
+padding-left: 50px;
+.footer_text p
+{
+    text-align: left;
+}
 }
