@@ -543,24 +543,26 @@ i.basket_header {
     margin: auto; }
 
 /*products*/
-.offer-products_wrap {
+.offer-products {
   height: 892px;
   width: 100%;
   position: relative;
   background-color: #274C5B; }
 
-.products.heading p {
-  text-align: center;
-  color: #7EB693;
-  font-size: 36px;
-  font-family: Yellowtail; }
-.products.heading h2 {
-  color: #274C5B;
-  text-align: center;
-  font-size: 50px;
-  font-family: Roboto;
-  font-weight: 800;
-  margin-top: 8px;
-  margin-bottom: 40px; }
+.products.heading {
+  position: absolute; }
+  .products.heading p {
+    text-align: center;
+    color: #7EB693;
+    font-size: 36px;
+    font-family: Yellowtail; }
+  .products.heading h2 {
+    color: #274C5B;
+    text-align: center;
+    font-size: 50px;
+    font-family: Roboto;
+    font-weight: 800;
+    margin-top: 8px;
+    margin-bottom: 40px; }
 
 /*# sourceMappingURL=about.css.map */
