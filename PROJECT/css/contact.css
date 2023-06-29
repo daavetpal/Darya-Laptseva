@@ -64,6 +64,14 @@ section {
   position: relative;
   padding: 0; }
 
+.btn_text {
+  color: #274C5B;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 10px; }
+
 @media all and (max-width: 1440px) {
   .container {
     width: 1197px; } }
@@ -523,25 +531,103 @@ i.basket_header {
   .footer.utilities .footer_text p {
     text-align: left; }
 
+.header_main {
+  height: 45vh;
+  background: linear-gradient(rgba(219, 213, 213, 0), #e7e7e7), url(..//img/PatternsContact.png) no-repeat, url(..//img/about_ban.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  position: relative;
+  display: flex;
+  margin-bottom: 90px; }
+  .header_main .header_padding {
+    padding-left: 0; }
+  .header_main .header_main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    color: white;
+    margin: auto; }
+
+h2 {
+  color: #274C5B;
+  font-size: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-bottom: 5px; }
+
+p {
+  color: #525C60;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; }
+
+.wavy-head {
+  position: relative; }
+
+.wavy-head span {
+  position: relative;
+  display: inline-block;
+  color: #274C5B;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 72px;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i)); }
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg); } }
+.contact_wrap {
+  width: 100%;
+  position: relative;
+  margin-top: 209px; }
+
+.contact_content {
+  display: flex;
+  align-items: center;
+  gap: 75px; }
+  .contact_content .content {
+    width: 624px;
+    height: 780px;
+    background: #FFF;
+    border-radius: 20px;
+    background: url(..//img/fruits_contact.jpg) no-repeat;
+    background-size: contain; }
+
+.content_text {
+  display: flex;
+  width: 702px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px; }
+
+.message-points.message {
+  width: 352px;
+  height: 113px;
+  border-radius: 16px;
+  border: 1px solid #EEE;
+  background: #FFF;
+  position: relative; }
+  .message-points.message img {
+    position: absolute;
+    top: 11px;
+    left: 12px; }
+
 h4 {
   margin: 50px 0 25px 0; }
 
 label {
   font-weight: bold;
   opacity: 0.7; }
-
-.header_main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), black), url(../images/header/20.jpg); }
-
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-  flex-grow: 1;
-  align-content: center;
-  align-items: stretch;
-  align-self: baseline;
-  padding: 10px 50px 50px 50px; }
 
 .contact :nth-child(1) {
   flex: 1 0 100%; }
@@ -558,16 +644,14 @@ label {
 .week_padding {
   padding: 50px 50px 0 50px; }
 
-.map_google {
-  width: 100%;
-  height: 350px;
-  border: none; }
-
-@media only all and (max-width: 990px) {
-  .contact {
-    flex-direction: column; }
-
-  .week_padding {
-    padding-left: 0; } }
+/*@media only all and (max-width: 990px) {
+    .contact {
+        flex-direction: column;
+    }
+    .week_padding {
+        padding-left: 0;
+    }
+}
+*/
 
 /*# sourceMappingURL=contact.css.map */

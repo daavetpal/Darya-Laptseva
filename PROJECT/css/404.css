@@ -1,52 +1,216 @@
-/*
-Error: File to import not found or unreadable: ..//header.scss.
-       Load path: C:/Даша/q/Darya-Laptseva/PROJECT/css
-        on line 1 of C:\Даша\q\Darya-Laptseva\PROJECT\css\404.scss
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-1: @import "..//header.scss";
-2: @import "..//mixins.scss";
-3: @import "..//footer.scss";
-4: 
-5: 
-6: * {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-Backtrace:
-C:\Даша\q\Darya-Laptseva\PROJECT\css\404.scss:1
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-style: normal;
+  font-family: 'Roboto';
+  background-color: #fff;
+  margin: 0 auto; }
+
+#wrapper {
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #fff;
+  margin: 0 auto; }
+
+section {
+  width: 100%; }
+
+.container {
+  max-width: 1596px;
+  margin: 0 auto;
+  min-width: 320px;
+  position: relative;
+  padding: 0; }
+
+.btn_text {
+  color: #274C5B;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 10px; }
+
+@media all and (max-width: 1440px) {
+  .container {
+    width: 1197px; } }
+@media all and (max-width: 1200px) {
+  .container {
+    width: 998px; } }
+@media all and (max-width: 1024px) {
+  .container {
+    width: 852px; } }
+@media all and (max-width: 768px) {
+  .container {
+    max-width: none; } }
+.container_main {
+  max-width: 1400px;
+  margin: 0 auto;
+  min-width: 320px; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(..//img/404Pattern.png) no-repeat, url(..//img/404_ban.jpg) no-repeat; }
+
+.header {
+  background: rgba(29, 78, 125, 0.3);
+  text-transform: none;
+  text-align: left;
+  color: #1d4e7d;
+  padding: 5px;
+  position: sticky;
+  z-index: 2;
+  font-size: large; }
+
+p {
+  color: rgba(29, 78, 125, 0.9); }
+
+.content {
+  display: flex;
+  width: 533px;
+  flex-direction: column;
+  text-align: center;
+  gap: 36px;
+  background-color: transparent;
+  padding: 0 15px;
+  position: relative;
+  margin-top: 214px;
+  max-width: 550px;
+  position: absolute;
+  left: 60%; }
+  .content h1 {
+    color: #274C5B;
+    font-size: 70px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; }
+  .content p {
+    color: #525C60;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 165.4%; }
+
+p.btn_text {
+  color: #fff; }
+
+.shine-button {
+  width: 220px;
+  height: 79px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #274C5B;
+  border: 0;
+  font-size: 20px;
+  transition: .2s ease-in-out; }
+
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+  height: 60px;
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  transform: skewX(-45deg); }
+
+.shine-button:hover {
+  background: #83bec5;
+  color: #fff; }
+
+.shine-button:hover:before {
+  left: 100%;
+  transition: .5s ease-in-out; }
+
+.shine-button:focus {
+  background: #83bec5;
+  color: #fff;
+  outline: none; }
+
+/*@media only all and (max-width: 640px) {
+.content {
+    margin: 100px auto; 
+    max-width: 400px;     
+    padding: 40px 25px;   
+}
+.img {
+    max-width: 15vmax;   
+    max-height: 15vmax;           
+}
+}
+
+@media only all and (max-width: 370px) {
+.content {
+    background-color: transparent;
+    margin: 110px auto;
+}
+}   
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ..//header.scss.\A        Load path: C:/Даша/q/Darya-Laptseva/PROJECT/css\A         on line 1 of C:\Даша\q\Darya-Laptseva\PROJECT\css\404.scss\A \A 1: @import \"..//header.scss\";\A 2: @import \"..//mixins.scss\";\A 3: @import \"..//footer.scss\";\A 4: \A 5: \A 6: * {"; }
+@-webkit-keyframes rotate-404 {
+  from {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+@keyframes rotate-404 {
+  from {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  to {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+.rotate-404 {
+  -webkit-animation: rrotate-404 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-404 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both; }
+
+/*# sourceMappingURL=404.css.map */

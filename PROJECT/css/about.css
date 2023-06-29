@@ -64,6 +64,14 @@ section {
   position: relative;
   padding: 0; }
 
+.btn_text {
+  color: #274C5B;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 10px; }
+
 @media all and (max-width: 1440px) {
   .container {
     width: 1197px; } }
@@ -524,13 +532,13 @@ i.basket_header {
     text-align: left; }
 
 .header_main {
-  height: 58vh;
+  height: 45vh;
+  background: linear-gradient(rgba(219, 213, 213, 0), #e7e7e7), url(..//img/BgPatterns.png) no-repeat, url(..//img/bg_about.png) no-repeat;
   background-position: center;
   background-size: cover;
   width: auto;
   position: relative;
-  display: flex;
-  background: linear-gradient(rgba(179, 173, 173, 0), #767676), url(..//img/bg_about.png) no-repeat, url(..//img/BgPatterns.png) no-repeat; }
+  display: flex; }
   .header_main .header_padding {
     padding-left: 0; }
   .header_main .header_main_title {
@@ -546,25 +554,30 @@ i.basket_header {
       font-family: Roboto;
       font-style: normal;
       font-weight: 800;
-      line-height: normal; }
+      line-height: normal;
+      font-size: 72px; }
 
 .about_banner {
   height: 1067px;
   position: relative;
-  background-size: cover;
   width: auto; }
+
+.bg img {
+  width: 976px;
+  height: 929px; }
+
+.bg_content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px; }
 
 .about_content {
   display: flex;
-  width: 675x;
+  justify-content: end;
+  width: 675px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 58px;
-  position: absolute;
-  right: 0;
-  top: 209px;
-  background: url(img/food_ban.jpg) no-repeat;
-  background-position: bottom; }
+  gap: 58px; }
 
 .about_content_heading h3 {
   color: #274C5B;
