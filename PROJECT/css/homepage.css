@@ -555,7 +555,7 @@ h3 {
 .banner_img {
   background: url(..//..//img/BackgroundPatterns.png) no-repeat, url(..//..//img/background1.jpg) no-repeat;
   height: 898px;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-position: center;
   width: auto; }
