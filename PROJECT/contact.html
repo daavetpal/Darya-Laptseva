@@ -26,29 +26,32 @@
                     </a>
                 </div>
                 <nav class="header_menu">
-                    <input type="checkbox" class="check" id="click" hidden>
                     <div class="nav_wrap" aria-hidden="true">
                         <label class="nav_menu" for="click1">
                             <div class="nav_checking">
                                 <ul class="header_menu_list">
-                                    <li class="header_menu_item"><a class="header_menu_link" href="#">Home</a></li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="#">About</a></li>
-                                    <li class="header_menu_item drop"><a class="header_menu_link" href="#">Pages</a>
-                                        <ul class="drop_add">
-                                            <li class="header_menu_item"><a class="header_menu_link"
-                                                    href="#">Services</a>
-                                            </li>
-                                            <li class="header_menu_item"><a class="header_menu_link" href="#">Quality
-                                                    Standard</a></li>
-                                            <li class="header_menu_item"><a class="header_menu_link" href="#">Portfolio
-                                                    Standards</a>
-                                        </ul>
-                                    </li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="#">Shop</a></li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="#">Projects</a>
-                                    </li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="#">News</a>
-                                    </li>
+                                    <li class="header_menu_item"><a class="header_menu_link"
+                                        href="homepage.html">Home</a></li>
+                                <li class="header_menu_item"><a class="header_menu_link" href="about.html">About</a>
+                                </li>
+                                <li class="header_menu_item drop"><a class="header_menu_link"
+                                        href="404.html">Pages</a>
+                                    <ul class="drop_add">
+                                        <li class="header_menu_item"><a class="header_menu_link"
+                                                href="#">Services</a>
+                                        </li>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Quality
+                                                Standard</a></li>
+                                        <li class="header_menu_item"><a class="header_menu_link" href="#">Portfolio
+                                                Standards</a>
+                                    </ul>
+                                </li>
+                                <li class="header_menu_item"><a class="header_menu_link" href="shop.html">Shop</a>
+                                </li>
+                                <li class="header_menu_item"><a class="header_menu_link" href="#">Projects</a>
+                                </li>
+                                <li class="header_menu_item"><a class="header_menu_link" href="news.html">News</a>
+                                </li>
                                 </ul>
                             </div>
                         </label>
@@ -134,45 +137,68 @@
         <section class="location">
             <div class="container">
                 <div class="container_main">
-        <div class="contact_location">
-            <div class="contact_location_scale">
-                <img src="img/farms.jpg" class="scale">
-            </div>
-            <div class="contact_location_block">
-            </div>
+                    <div class="contact_location">
+                        <div class="contact_location_scale">
+                            <img src="img/farms.jpg">
+                            <div class="contact_location_block">
+                                <div class="contact_location_text">
+                                    <span>Location</span>
+                                    <h3>Our Farms</h3>
+                                    <p>Established fact that a reader will be distracted by the readable content of a
+                                        page when looking a layout. The point of using.</p>
+                                    <div class="location-point">
+                                        <span>New York, USA</span>
+                                            <p>299 Park Avenue New York,
+                                            New York 10171</p>
+                                    </div>
+                                    <div class="location-point">
+                                        <span>New York, USA</span>
+                                        <p>
+                                            299 Park Avenue New York,
+                                            New York 10171</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-            <form method="get" action="https://fe.it-academy.by/TestForm.php">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label>Full Name*</label>
-                        <input type="text" class="form-control" placeholder="Your Email Address">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label>Your Email</label>
-                        <input type="email" class="form-control" placeholder="example@yourmail.com">
-                    </div>
+        <section class="form">
+            <div class="container">
+                <div class="container_main">
+        <form method="get" action="https://fe.it-academy.by/TestForm.php">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Full Name*</label>
+                    <input type="text" class="form-control" placeholder="Your Email Address">
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label>Company</label>
-                        <input type="text" class="form-control" placeholder="yourcompany name here">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label>Subject</label>
-                        <input type="text" class="form-control" placeholder="how can we help">
-                    </div>
+                <div class="form-group col-md-6">
+                    <label>Your Email*</label>
+                    <input type="email" class="form-control" placeholder="example@yourmail.com">
                 </div>
-                <div class="form-group">
-                    <label>Message*</label>
-                    <textarea class="form-control" placeholder="hello there,i would like to talk about how to..."
-                        id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Company</label>
+                    <input type="text" class="form-control" placeholder="yourcompany name here">
                 </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+                <div class="form-group col-md-6">
+                    <label>Subject</label>
+                    <input type="text" class="form-control" placeholder="how can we help">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" placeholder="hello there,i would like to talk about how to..."
+                    id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
         </div>
         </div>
         </div>
+        </section>
     </main>
     <footer>
         <section class="subscribe">

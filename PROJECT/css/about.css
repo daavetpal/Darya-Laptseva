@@ -206,17 +206,10 @@ section {
   .header_menu {
     width: 100%;
     height: calc(100vh - 75px);
-    background-color: #FAFAFA;
     padding-bottom: 20px;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
-    transition-duration: 0.5s; }
-
-  .header_menu_item {
-    width: 100%;
-    padding: 5px 50px 3px 50px;
-    position: relative;
-    border-bottom: 1px solid black; } }
+    transition-duration: 0.5s; } }
 /* необходим для размещения выпадающего содержимого */
 .header_menu_item.drop {
   position: relative;
@@ -557,6 +550,23 @@ i.basket_header {
       line-height: normal;
       font-size: 72px; }
 
+span {
+  color: #7EB693;
+  font-size: 36px;
+  font-family: Yellowtail;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; }
+
+h3 {
+  color: #274C5B;
+  font-size: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-bottom: 16px; }
+
 .about_banner {
   height: 1067px;
   position: relative;
@@ -652,44 +662,59 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 91px;
-  padding-top: 190px; }
+  margin-top: 190px; }
   .wechoose_content .first {
     display: flex;
-    width: 1400px;
     align-items: center;
     gap: 51px; }
 
-.second {
-  margin-top: 91px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px; }
-  .second .str {
-    width: 257px;
-    height: 335px;
-    border-radius: 30px;
-    background: #FFF; }
-    .second .str img {
-      padding: 59px 83px 15px 79px;
-      width: 95px;
-      height: 95px; }
-    .second .str h1 {
-      color: #274C5B;
-      font-size: 25px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-      padding: 0 53px 12px 51px; }
-    .second .str p {
-      color: #525C60;
-      text-align: center;
-      font-size: 18px;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 165.4%;
-      padding: 0 38px 0 35px; }
+.wechoose_cont.second {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; }
+
+.wechoose_content_heading {
+  display: flex;
+  width: 671px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  flex-shrink: 0; }
+
+.wechoose_img {
+  width: 678px;
+  height: 579px;
+  border-radius: 30px;
+  background: url(..//img//bg_about2.jpg) no-repeat;
+  background-size: cover; }
+
+.str {
+  width: 257px;
+  height: 335px;
+  border-radius: 30px;
+  background: #FFF; }
+  .str img {
+    padding: 59px 83px 15px 79px;
+    width: 95px;
+    height: 95px; }
+  .str h1 {
+    color: #274C5B;
+    font-size: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding: 0 53px 12px 51px; }
+  .str p {
+    color: #525C60;
+    text-align: center;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%;
+    padding: 0 38px 0 35px; }
 
 .team {
   height: 1220px;
@@ -700,8 +725,8 @@ h1 {
 
 .team_content {
   display: flex;
-  width: 1401px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 42px;
   margin-top: 177px;
@@ -711,38 +736,31 @@ h1 {
     width: 852px;
     flex-direction: column;
     align-items: center; }
-    .team_content .team_content-heading span {
-      color: #7EB693;
-      font-size: 36px;
-      font-family: Yellowtail;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal; }
-    .team_content .team_content-heading h3 {
-      color: #274C5B;
-      font-size: 50px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 800;
-      line-height: normal;
-      padding-bottom: 16px; }
-    .team_content .team_content-heading p {
-      color: #525C60;
-      text-align: center;
-      font-size: 18px;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 165.4%; }
+
+p {
+  color: #525C60;
+  text-align: center;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; }
 
 .team_content_person {
   display: flex;
   align-items: flex-start;
   gap: 27px;
   height: 615px; }
-  .team_content_person .person {
-    border-radius: 30px 30px 0px 0px;
-    background: #C4C4C4; }
+
+.person {
+  border-radius: 30px;
+  background-color: #F9F8F8; }
+
+.team_details {
+  display: flex;
+  width: 392px;
+  align-items: flex-end;
+  gap: 145px; }
 
 /*products*/
 .offer-products {
@@ -775,18 +793,23 @@ h1 {
   height: 314px;
   border-radius: 30px;
   width: 334px;
-  background-color: #F0F0F0; }
+  background-color: #F0F0F0;
+  margin-top: 33px; }
 
 .card:first-child {
   background: url(..//img/product_offer1.png) no-repeat;
-  background-size: contain; }
+  background-size: cover; }
 
 .card:nth-child(2) {
   background: url(..//img/product_offer2.png) no-repeat, #F0F0F0;
-  background-size: contain; }
+  background-size: cover; }
 
 .card:nth-child(3) {
   background: url(..//img/product_offer3.png) no-repeat;
-  background-size: contain; }
+  background-size: cover; }
+
+.card:nth-child(4) {
+  background: url(..//img/product_offer4.png) no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=about.css.map */

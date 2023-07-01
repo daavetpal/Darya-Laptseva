@@ -10,9 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500&family=Yellowtail&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/homepage.css">
     <title>Organik</title>
 </head>
@@ -27,14 +26,16 @@
                     </a>
                 </div>
                 <nav class="header_menu">
-                    <input type="checkbox" class="check" id="click" hidden>
                     <div class="nav_wrap" aria-hidden="true">
                         <label class="nav_menu" for="click1">
                             <div class="nav_checking">
                                 <ul class="header_menu_list">
-                                    <li class="header_menu_item"><a class="header_menu_link" href="homepage.html">Home</a></li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="about.html">About</a></li>
-                                    <li class="header_menu_item drop"><a class="header_menu_link" href="404.html">Pages</a>
+                                    <li class="header_menu_item"><a class="header_menu_link"
+                                            href="homepage.html">Home</a></li>
+                                    <li class="header_menu_item"><a class="header_menu_link" href="about.html">About</a>
+                                    </li>
+                                    <li class="header_menu_item drop"><a class="header_menu_link"
+                                            href="404.html">Pages</a>
                                         <ul class="drop_add">
                                             <li class="header_menu_item"><a class="header_menu_link"
                                                     href="#">Services</a>
@@ -45,7 +46,8 @@
                                                     Standards</a>
                                         </ul>
                                     </li>
-                                    <li class="header_menu_item"><a class="header_menu_link" href="shop.html">Shop</a></li>
+                                    <li class="header_menu_item"><a class="header_menu_link" href="shop.html">Shop</a>
+                                    </li>
                                     <li class="header_menu_item"><a class="header_menu_link" href="#">Projects</a>
                                     </li>
                                     <li class="header_menu_item"><a class="header_menu_link" href="news.html">News</a>
@@ -71,14 +73,12 @@
                     </div>
                 </div>
                 <div id="header_burger">
-                    <label for="click">
                         <div class="header_button">
                             <span class="burger_line line-1"></span>
                             <span class="burger_line line-2"></span>
                             <span class="burger_line line-3"></span>
                         </div>
                 </div>
-                </label>
             </div>
         </div>
     </header>
@@ -181,29 +181,76 @@
                             <p>Testimonial</p>
                             <h3>What Our Customer Saying?</h3>
                         </div>
-
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="img/person.jpg">
-                                <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="back">
+                                <img src="img/person.jpg" alt="...">
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src=""alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="" alt="...">
+                              </div>
                             </div>
-                            <div class="item">
-                                <h4>2</h4>
-                            </div>
-                            <div class="item">
-                                <h4>3</h4>
-                            </div>
-                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Следующий</span>
+                            </button>
+                          </div>
                         <div class="counters">
                             <div class="counter">
-                                <div class="circle"></div>
-                            </div>
-                            <div class="counter">
+                                <svg width="211" height="212" viewBox="0 0 211 212" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Chart">
+                                        <circle id="Background" cx="105.5" cy="106.249" r="94.5" fill="#F1F1F1" />
+                                        <path id="Background_2"
+                                            d="M211 106.249C211 164.515 163.766 211.749 105.5 211.749C47.234 211.749 0 164.515 0 106.249C0 47.983 47.234 0.749023 105.5 0.749023C163.766 0.749023 211 47.983 211 106.249ZM4.21491 106.249C4.21491 162.187 49.5618 207.534 105.5 207.534C161.438 207.534 206.785 162.187 206.785 106.249C206.785 50.3108 161.438 4.96394 105.5 4.96394C49.5618 4.96394 4.21491 50.3108 4.21491 106.249Z"
+                                            fill="#7EB693" />
+                                    </g>
+                                </svg>
 
                             </div>
                             <div class="counter">
+                                <svg width="211" height="212" viewBox="0 0 211 212" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Chart">
+                                        <circle id="Background" cx="105.5" cy="106.249" r="94.5" fill="#F1F1F1" />
+                                        <path id="Background_2"
+                                            d="M211 106.249C211 164.515 163.766 211.749 105.5 211.749C47.234 211.749 0 164.515 0 106.249C0 47.983 47.234 0.749023 105.5 0.749023C163.766 0.749023 211 47.983 211 106.249ZM4.21491 106.249C4.21491 162.187 49.5618 207.534 105.5 207.534C161.438 207.534 206.785 162.187 206.785 106.249C206.785 50.3108 161.438 4.96394 105.5 4.96394C49.5618 4.96394 4.21491 50.3108 4.21491 106.249Z"
+                                            fill="#7EB693" />
+                                    </g>
+                                </svg>
+                                <h1>100%</h1>
 
+                            </div>
+                            <div class="counter">
+                                <svg width="211" height="212" viewBox="0 0 211 212" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Chart">
+                                        <circle id="Background" cx="105.5" cy="106.249" r="94.5" fill="#F1F1F1" />
+                                        <path id="Background_2"
+                                            d="M211 106.249C211 164.515 163.766 211.749 105.5 211.749C47.234 211.749 0 164.515 0 106.249C0 47.983 47.234 0.749023 105.5 0.749023C163.766 0.749023 211 47.983 211 106.249ZM4.21491 106.249C4.21491 162.187 49.5618 207.534 105.5 207.534C161.438 207.534 206.785 162.187 206.785 106.249C206.785 50.3108 161.438 4.96394 105.5 4.96394C49.5618 4.96394 4.21491 50.3108 4.21491 106.249Z"
+                                            fill="#7EB693" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="counter">
+                                <svg width="211" height="212" viewBox="0 0 211 212" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Chart">
+                                        <circle id="Background" cx="105.5" cy="106.249" r="94.5" fill="#F1F1F1" />
+                                        <path id="Background_2"
+                                            d="M211 106.249C211 164.515 163.766 211.749 105.5 211.749C47.234 211.749 0 164.515 0 106.249C0 47.983 47.234 0.749023 105.5 0.749023C163.766 0.749023 211 47.983 211 106.249ZM4.21491 106.249C4.21491 162.187 49.5618 207.534 105.5 207.534C161.438 207.534 206.785 162.187 206.785 106.249C206.785 50.3108 161.438 4.96394 105.5 4.96394C49.5618 4.96394 4.21491 50.3108 4.21491 106.249Z"
+                                            fill="#7EB693" />
+                                    </g>
+                                </svg>
                             </div>
                         </div>
 
@@ -211,7 +258,7 @@
                 </div>
             </div>
         </section>
-        <section class="offer_products">
+        <!--<section class="offer_products">
             <div class="container">
                 <div class="container_main">
                     <div class="products_content">
@@ -226,7 +273,7 @@
                     </div>
                 </div>
 
-        </section>
+        </section>-->
         <section class="weare">
             <div class="weare_block">
                 <div class="weare_content">
@@ -278,20 +325,44 @@
                             <h2>Discover weekly content about<br>organic food, & more</h2>
                         </div>
                     </div>
-                    <div class="article">
-                        <div class="article bg first"></div>
-                        <div class="news-to-top first">
-                            <h2></h2>
-                            <p></p>
+                    <div class="news">
+                        <div class="article first">
+                            <div class="date">
+                                <span>25<br>
+                                    Nov</span>
+                            </div>
+                            <div class="news-to-top">
+                                <div class="display_text">
+                                    <span>By Rachi Card</span>
+                                    <div>
+                                        <h2>The Benefits of Vitamin D & How to Get It</h2>
+                                        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        </p>
+                                    </div>
+                                        <a href="news.html">Shop Now</a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="article bg second"></div>
-                        <div class="news-to-top second">
-                            <h2></h2>
-                            <p></p>
+                        <div class="article second">
+                            <div class="date">
+                                <span>25<br>
+                                    Nov</span>
+                            </div>
+                            <div class="news-to-top">
+                                <div class="display_text">
+                                    <span>By Rachi Card</span>
+                                    <div>
+                                        <h2>Our Favorite Summertime Tomato</h2>
+                                        <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                        </p>
+                                    </div>
+                                        <a href="news.html">Shop Now</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
@@ -400,7 +471,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
     <script src="js/javascript.js"></script>
 </body>
 

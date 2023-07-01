@@ -206,17 +206,10 @@ section {
   .header_menu {
     width: 100%;
     height: calc(100vh - 75px);
-    background-color: #FAFAFA;
     padding-bottom: 20px;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
-    transition-duration: 0.5s; }
-
-  .header_menu_item {
-    width: 100%;
-    padding: 5px 50px 3px 50px;
-    position: relative;
-    border-bottom: 1px solid black; } }
+    transition-duration: 0.5s; } }
 /* необходим для размещения выпадающего содержимого */
 .header_menu_item.drop {
   position: relative;
@@ -560,6 +553,15 @@ h2 {
   line-height: normal;
   padding-bottom: 5px; }
 
+h3 {
+  color: #274C5B;
+  font-size: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-bottom: 19px; }
+
 p {
   color: #525C60;
   font-size: 18px;
@@ -597,7 +599,7 @@ p {
   gap: 75px; }
   .contact_content .content {
     width: 624px;
-    height: 780px;
+    height: 640px;
     background: #FFF;
     border-radius: 20px;
     background: url(..//img/fruits_contact.jpg) no-repeat;
@@ -608,7 +610,8 @@ p {
   width: 702px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 34px; }
+  gap: 34px;
+  height: 593px; }
 
 .message-points.message {
   width: 352px;
@@ -622,27 +625,59 @@ p {
     top: 11px;
     left: 12px; }
 
+.location {
+  margin-top: 209px; }
+
+.contact_location_scale {
+  height: 758px;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 80px;
+  overflow: hidden;
+  display: block;
+  background-color: #E6E7E9; }
+
+.contact_location_block {
+  display: flex;
+  width: 514px;
+  padding: 46px 53px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 30px;
+  background: #FFF;
+  position: absolute;
+  top: 122px;
+  right: 108px; }
+
+.location-point::before {
+  content: url(..//img/Location.png);
+  margin-right: 6px; }
+  .location-point::before p {
+    float: left; }
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 46px;
+  margin-bottom: 50px; }
+
 h4 {
   margin: 50px 0 25px 0; }
 
 label {
-  font-weight: bold;
-  opacity: 0.7; }
+  color: #274C5B;
+  font-size: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 26px; }
 
-.contact :nth-child(1) {
-  flex: 1 0 100%; }
-
-.contact :nth-child(2) {
-  flex: 1 1 auto; }
-
-.contact :nth-child(3) {
-  flex: 1 1 auto; }
-
-.contact :nth-child(4) {
-  flex: 1 0 100%; }
-
-.week_padding {
-  padding: 50px 50px 0 50px; }
+.form-control {
+  border-radius: 16px;
+  border: 1px solid #7EB693;
+  height: 80px; }
 
 /*@media only all and (max-width: 990px) {
     .contact {
