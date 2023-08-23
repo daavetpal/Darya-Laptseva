@@ -1,0 +1,31 @@
+<svg width="89" height="90" viewBox="0 0 89 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="89" height="90" fill="#1E1E1E"/>
+<g id="Contact" clip-path="url(#clip0_1_430)">
+<rect width="1920" height="4302" transform="translate(-970 -1153)" fill="white"/>
+<g id="01">
+<g id="Content">
+<g id="Points">
+<g id="01_2">
+<rect id="Rectangle 225" x="-11.5" y="-10" width="351" height="112" rx="15.5" fill="white" stroke="#EEEEEE"/>
+<g id="Icon">
+<rect id="Rectangle 229" y="0.5" width="89" height="89" rx="11" fill="#F4F4F4"/>
+<g id="Group 15">
+<g id="Rectangle 291">
+<rect x="22" y="31.5" width="42" height="31" rx="8" fill="#F9EAB6"/>
+<rect x="22" y="31.5" width="42" height="31" rx="8" stroke="#7EB693"/>
+</g>
+<rect id="Rectangle 290" x="27.5" y="28" width="39" height="28" rx="6.5" stroke="#7EB693" stroke-width="3"/>
+<path id="Vector 1" d="M29 29.5L44.8187 43.7173C45.9499 44.734 47.6628 44.7433 48.805 43.7391L65 29.5" stroke="#7EB693" stroke-width="3"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_430">
+<rect width="1920" height="4302" fill="white" transform="translate(-970 -1153)"/>
+</clipPath>
+</defs>
+</svg>

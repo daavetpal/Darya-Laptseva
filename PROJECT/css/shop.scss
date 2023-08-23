@@ -1,0 +1,219 @@
+@import "style.scss";
+@import "header.scss";
+@import "mixins.scss";
+@import "footer.scss";
+.header_main {
+    height: 45vh;
+    background: linear-gradient(rgba(219, 213, 213, 0), rgb(231, 231, 231)), url(..//img/PatternShop.png) no-repeat, url(..//img/shop_ban.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    position: relative;
+    display: flex; 
+    margin-bottom: 90px;
+
+.header_padding {
+    padding-left: 0;
+}
+.header_main_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    color: white; 
+    margin: auto;
+    h1
+    {
+        color: #274C5B;
+font-family: Roboto;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+font-size: 72px;
+    }
+}
+}
+.cards {
+    width: 100%;
+    height: 1587px;
+    position: relative;
+}
+
+.cards_head {
+    margin-top: 176px;
+
+    p {
+        text-align: center;
+        color: #7EB693;
+        font-size: 36px;
+        font-family: Yellowtail;
+    }
+
+    h2 {
+        color: #274C5B;
+        text-align: center;
+        font-size: 50px;
+        font-family: Roboto;
+        font-weight: 800;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+}
+
+#group_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    grid-gap: 20px;
+}
+
+.goods_btn {
+    display: flex;
+    justify-content: center;
+}
+
+$bg: #274C5B;
+
+.btn.goods {
+    @include btn($bg);
+
+    .btn_text {
+        color: #FFF;
+    }
+
+    margin-top: 122px;
+}
+
+$bg: #7EB693;
+
+.btn.goods:hover {
+    @include btn($bg);
+}
+
+/*card bootstrap style*/
+.card {
+    height: 483px;
+    border-radius: 30px;
+    background: #FFF;
+    border: 1px;
+    position: relative;
+
+}
+
+.card:hover {
+    box-shadow: inset 0 0 100px 100px rgba(222, 197, 197, 0.1);
+    cursor: pointer;
+}
+
+.card-img-top {
+    padding-top: 45px;
+    width: 285px;
+    height: 310px;
+    position: relative;
+    left: 25px;
+}
+
+.type {
+    width: 96px;
+    height: 31px;
+    border-radius: 8px;
+    background: #274C5B;
+    margin: 29px 0 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-type {
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: 600;
+    position: absolute;
+
+    span.card-text {
+        color: #274C5B;
+        font-size: 20px;
+        font-family: Roboto;
+        font-weight: 500;
+    }
+}
+
+.card-description {
+    border-top: 1px solid #DEDDDD;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+}
+
+span.card-text {
+    color: #274C5B;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+span.old-price {
+    color: #B8B8B8;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-right: 7px;
+}
+
+span.new-price {
+    color: #274C5B;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 700;
+    margin-right: 81px;
+}
+
+.rating-area {
+    overflow: hidden;
+    width: 90px;
+    margin: 0 auto;
+}
+
+.rating-area:not(:checked)>input {
+    display: none;
+}
+
+.rating-area:not(:checked)>label {
+    float: right;
+    width: 18px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.rating-area:not(:checked)>label:before {
+    content: '★';
+}
+
+.rating-area>input:checked~label {
+    color: #FFA858;
+    text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked)>label:hover,
+.rating-area:not(:checked)>label:hover~label {
+    color: #FFA858;
+}
+
+.rating-area>input:checked+label:hover,
+.rating-area>input:checked+label:hover~label,
+.rating-area>input:checked~label:hover,
+.rating-area>input:checked~label:hover~label,
+.rating-area>label:hover~input:checked~label {
+    color: #FFA858;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area>label:active {
+    position: relative;
+}

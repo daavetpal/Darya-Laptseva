@@ -28,48 +28,44 @@ var cards = [
         new: "$14.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/nuts.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/nuts.png",
         type: "Millets",
         text: "White Nuts",
         old: "$20.00",
         new: "$15.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/tomato.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/tomato.png",
         type: "Vegetable",
         text: "Vegan Red Tomato",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/bean.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/bean.png",
         type: "Health",
         text: "Mung Bean",
-        description: "Calabrese Broccolli",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/hazelnut.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/hazelnut.png",
         type: "Nuts",
         text: "Brown Hazelnut",
-        description: "Calabrese Broccolli",
         old: "$20.00",
         new: "$12.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/eggs.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/eggs.png",
         type: "Fresh",
         text: "Calabrese Broccollis",
-        description: "Calabrese Broccolli",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/broccoli.png",
         type: "Fresh",
         text: "Zelco Suji Elaichi Rusk",
-        description: "Calabrese Broccolli",
         old: "$20.00",
         new: "$15.00"
     }
@@ -115,63 +111,45 @@ document.querySelector(".header_burger").onclick = () => {
     document.querySelector(".header_button").classList.toggle("change");
 };
 
-$(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        nav: true,
-        autoplay: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    })
-});
 
 var cards2 = [
 
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/broccoli.png",
         type: "Vegetable",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$13.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/banan.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/banan.png",
         type: "Fresh",
         text: "Fresh Banana Fruites",
         old: "$20.00",
         new: "$14.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/nuts.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/nuts.png",
         type: "Millets",
         text: "White Nuts",
         old: "$20.00",
         new: "$15.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/tomato.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/tomato.png",
         type: "Vegetable",
         text: "Vegan Red Tomato",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/bean.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/bean.png",
         type: "Health",
         text: "Mung Bean",
         description: "Calabrese Broccolli"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/hazelnut.png",
+        imgUrl: "http://127.0.0.1:5501/PROJECT/img/hazelnut.png",
         type: "Nuts",
         text: "Brown Hazelnut",
         description: "Calabrese Broccolli"
@@ -212,3 +190,14 @@ function render2() {
 }
 
 render2();
+
+function yes()
+{
+    alert('');
+}
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 2000,
+  wrap: false
+})

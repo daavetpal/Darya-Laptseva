@@ -84,6 +84,14 @@ section
   position: relative;
   padding: 0;
 }
+.btn_text {
+  color: #274C5B;
+  font-size: 20px;
+  font-family: Roboto;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 10px;
+}
 @media all and (max-width: 1440px){
   .container
   {
