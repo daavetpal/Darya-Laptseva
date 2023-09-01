@@ -950,10 +950,10 @@ span.new-price {
 .weare {
   height: 931px;
   width: 100%;
-  background: url(..//img/landscape.jpg) no-repeat;
   position: relative;
-  background-size: contain;
-  background-position: center;
+  background: url(..//img/landscape.jpg) no-repeat;
+  background-size: 50%;
+  background-position: left;
   width: auto; }
 
 .products_content {
@@ -978,13 +978,12 @@ span.new-price {
   padding-top: 100px;
   position: absolute;
   background: #FFF;
-  border-top-left-radius: 30px;
+  border-radius: 30px;
   top: 100px;
-  left: 871px; }
+  left: 45%; }
 
 .weare_content {
   width: 700px;
-  padding-top: 78px;
   padding-left: 89px;
   display: flex;
   width: 700px;
@@ -1121,8 +1120,7 @@ div.article:hover > div.news-to-top {
 .news_content {
   display: flex;
   align-items: flex-end;
-  gap: 478px;
-  padding-top: 201px; }
+  gap: 478px; }
 
 .news_heading {
   margin-bottom: 45px; }

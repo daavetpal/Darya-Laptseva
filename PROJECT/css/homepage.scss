@@ -473,10 +473,10 @@ line-height: 165.4%;
 .weare {
     height: 931px;
     width: 100%;
-    background: url(..//img/landscape.jpg) no-repeat;
     position: relative;
-    background-size: contain;
-    background-position: center;
+    background: url(..//img/landscape.jpg) no-repeat;
+    background-size: 50%;
+    background-position: left;
     width: auto;
 }
 
@@ -507,15 +507,14 @@ line-height: 165.4%;
     padding-top: 100px;
     position: absolute;
     background: #FFF;
-    border-top-left-radius: 30px;
+    border-radius: 30px;
     top: 100px;
-    left: 871px;
+    left: 45%;
 
 }
 
 .weare_content {
     width: 700px;
-    padding-top: 78px;
     padding-left: 89px;
     display: flex;
     width: 700px;
@@ -672,7 +671,6 @@ div.article:hover>div.news-to-top {
     display: flex;
     align-items: flex-end;
     gap: 478px;
-    padding-top: 201px;
 }
 
 .news_heading {
