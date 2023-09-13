@@ -952,7 +952,7 @@ span.new-price {
   width: 100%;
   position: relative;
   background: url(..//img/landscape.jpg) no-repeat;
-  background-size: 50%;
+  background-size: 50% 100%;
   background-position: left;
   width: auto; }
 
@@ -972,6 +972,12 @@ span.new-price {
     font-family: Roboto;
     font-weight: 800; }
 
+#group_cards2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  grid-gap: 20px; }
+
 .weare_block {
   width: 358px;
   height: 723px;
@@ -980,7 +986,7 @@ span.new-price {
   background: #FFF;
   border-radius: 30px;
   top: 100px;
-  left: 45%; }
+  left: 46%; }
 
 .weare_content {
   width: 700px;

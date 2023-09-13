@@ -14,21 +14,21 @@ window.onscroll = function () {
 var cards = [
 
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        imgUrl: "./img/broccoli.png",
         type: "Vegetable",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$13.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/banan.png",
+        imgUrl: "./img/banan.png",
         type: "Fresh",
         text: "Fresh Banana Fruites",
         old: "$20.00",
         new: "$14.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/nuts.png",
+        imgUrl: "./img/nuts.png",
         type: "Millets",
         text: "White Nuts",
         old: "$20.00",
@@ -42,28 +42,28 @@ var cards = [
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/bean.png",
+        imgUrl: "./img/bean.png",
         type: "Health",
         text: "Mung Bean",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/hazelnut.png",
+        imgUrl: "./img/hazelnut.png",
         type: "Nuts",
         text: "Brown Hazelnut",
         old: "$20.00",
         new: "$12.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/eggs.png",
+        imgUrl: "./img/eggs.png",
         type: "Fresh",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/broccoli.png",
+        imgUrl: "./img/suji.png",
         type: "Fresh",
         text: "Zelco Suji Elaichi Rusk",
         old: "$20.00",
@@ -112,59 +112,35 @@ document.querySelector(".header_burger").onclick = () => {
 };
 
 
-var cards2 = [
+var shortcards = [
 
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/broccoli.png",
+        imgUrl: "./img/broccoli.png",
         type: "Vegetable",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$13.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/banan.png",
+        imgUrl: "./img/banan.png",
         type: "Fresh",
         text: "Fresh Banana Fruites",
         old: "$20.00",
         new: "$14.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/nuts.png",
+        imgUrl: "./img/nuts.png",
         type: "Millets",
         text: "White Nuts",
         old: "$20.00",
         new: "$15.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/tomato.png",
+        imgUrl: "./img/tomato.png",
         type: "Vegetable",
         text: "Vegan Red Tomato",
         old: "$20.00",
         new: "$17.00"
-    },
-    {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/bean.png",
-        type: "Health",
-        text: "Mung Bean",
-        description: "Calabrese Broccolli"
-    },
-    {
-        imgUrl: "http://127.0.0.1:5501/PROJECT/img/hazelnut.png",
-        type: "Nuts",
-        text: "Brown Hazelnut",
-        description: "Calabrese Broccolli"
-    },
-    {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/eggs.png",
-        type: "Fresh",
-        text: "Calabrese Broccollis",
-        description: "Calabrese Broccolli"
-    },
-    {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
-        type: "Fresh",
-        text: "Zelco Suji Elaichi Rusk",
-        description: "Calabrese Broccolli"
     }
 ];
 
@@ -174,14 +150,14 @@ var prod = document.getElementById('group_cards2');
 function render2() {
     var str2 = "";
 
-    for (var f = 0; f < cards2.length; f++) {
+    for (var f = 0; f < shortcards.length; f++) {
         str2 += `
-        <div class="card">
-            <div class='type'><span class='card-type'>${cards2[i].type}</span></div>
-            <img src="${cards2[i].imgUrl}" class="card-img-top" "alt="${cards2[i].imgUrl}">
+        <div class="card2">
+            <div class='type'><span class='card-type'>${shortcards[i].type}</span></div>
+            <img src="${shortcards[i].imgUrl}" class="card-img-top" "alt="${shortcards[i].imgUrl}">
             <div class="card-body">
-    <p class="card-text">${cards2[i].text}</p>
-    <div class="card-description"><span class="old-price">${cards2[i].old}</span><span class="old-price">${cards2[i].new}</span></div>
+    <p class="card-text">${shortcards[i].text}</p>
+    <div class="card-description"><span class="old-price">${shortcards[i].old}</span><span class="old-price">${shortcards[i].new}</span></div>
   </div>
 </div>
         </div>`

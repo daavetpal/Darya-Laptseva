@@ -14,84 +14,84 @@ window.onscroll = function () {
 var cards = [
 
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        imgUrl: "./img/broccoli.png",
         type: "Vegetable",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$13.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/banan.png",
+        imgUrl: "./img/banan.png",
         type: "Fresh",
         text: "Fresh Banana Fruites",
         old: "$20.00",
         new: "$14.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/nuts.png",
+        imgUrl: "./img/nuts.png",
         type: "Millets",
         text: "White Nuts",
         old: "$20.00",
         new: "$15.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/tomato.png",
+        imgUrl: "./img/tomato.png",
         type: "Vegetable",
         text: "Vegan Red Tomato",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/bean.png",
+        imgUrl: "./img/bean.png",
         type: "Health",
         text: "Mung Bean",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/hazelnut.png",
+        imgUrl: "./img/hazelnut.png",
         type: "Nuts",
         text: "Brown Hazelnut",
         old: "$20.00",
         new: "$12.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/eggs.png",
+        imgUrl: "./img/eggs.png",
         type: "Fresh",
         text: "Calabrese Broccollis",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/broccoli.png",
+        imgUrl: "./img/broccoli.png",
         type: "Fresh",
         text: "Zelco Suji Elaichi Rusk",
         old: "$20.00",
         new: "$15.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/mungbean.png",
+        imgUrl: "./img/mungbean.png",
         type: "Health",
         text: "Mung Bean",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/whitenuts.png",
+        imgUrl: "./img/whitenuts.png",
         type: "Nuts",
         text: "White Hazelnut",
         old: "$20.00",
         new: "$12.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/corn.png",
+        imgUrl: "./img/corn.png",
         type: "Fresh",
         text: "Fresh Corn",
         old: "$20.00",
         new: "$17.00"
     },
     {
-        imgUrl: "http://127.0.0.1:5500/PROJECT/img/almonds.png",
+        imgUrl: "./img/almonds.png",
         type: "Fresh",
         text: "Organic Almonds",
         old: "$20.00",
