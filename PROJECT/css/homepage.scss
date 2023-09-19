@@ -231,7 +231,7 @@ $bg: #7EB693;
     }
 }
 
-#group_cards {
+#group_cards, #group_cardssec {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: flex-start;
@@ -262,7 +262,7 @@ $bg: #7EB693;
 }
 
 /*card bootstrap style*/
-.card {
+.card{
     height: 483px;
     border-radius: 30px;
     background: #FFF;

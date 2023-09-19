@@ -107,12 +107,8 @@ function render() {
 
 render();
 
-document.querySelector(".header_burger").onclick = () => {
-    document.querySelector(".header_button").classList.toggle("change");
-};
 
-
-var shortcards = [
+/*var shortcards = [
 
     {
         imgUrl: "./img/broccoli.png",
@@ -144,28 +140,28 @@ var shortcards = [
     }
 ];
 
-var renderBtn2 = document.querySelector('button[abc="render2"]');
-var prod = document.getElementById('group_cards2');
+var renderBtnsec = document.querySelector('button[abc="rendersec"]');
+var prod = document.getElementById('group_cardssec');
 
-function render2() {
-    var str2 = "";
+function rendersec() {
+    var strsec = "";
 
     for (var f = 0; f < shortcards.length; f++) {
-        str2 += `
-        <div class="card2">
-            <div class='type'><span class='card-type'>${shortcards[i].type}</span></div>
-            <img src="${shortcards[i].imgUrl}" class="card-img-top" "alt="${shortcards[i].imgUrl}">
+        strsec += `
+        <div class="card">
+            <div class='type'><span class='card-type'>${shortcards[f].type}</span></div>
+            <img src="${shortcards[f].imgUrl}" class="card-img-top" "alt="${shortcards[f].imgUrl}">
             <div class="card-body">
-    <p class="card-text">${shortcards[i].text}</p>
-    <div class="card-description"><span class="old-price">${shortcards[i].old}</span><span class="old-price">${shortcards[i].new}</span></div>
+    <p class="card-text">${shortcards[f].text}</p>
+    <div class="card-description"><span class="old-price">${shortcards[f].old}</span><span class="old-price2">${shortcards[f].new}</span></div>
   </div>
 </div>
         </div>`
     }
-    app.innerHTML = str2
+    app.innerHTML = strsec
 }
 
-render2();
+rendersec();*/
 
 function yes()
 {
